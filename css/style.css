@@ -1,0 +1,138 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;   
+ 	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+	background-color:#ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/**********NAVIGATION CSS***********/
+.MyETPWallet_nav{
+	height: 90px;
+	background-color: #ffffff;
+	background: rgba(255, 255, 255, 1);
+}
+#menu li {
+	display:inline-block;
+	color: #000;
+}
+#menu li.active{
+	background-color: #076191;
+	background: rgba(7, 97, 145, 0.8);
+	color: #ffffff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+	font-weight: 400;
+	line-height: 90px;
+	padding: 0px 12px;
+	font-size: 1.4rem;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+}
+#menu li a,
+#menu li.active a{
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+.etp_navbarheader a{
+	padding: 6px 12px;
+	width: 300px;
+	height: 90px;
+}
+.etp_logo img{
+	width: 276px;
+	height: 75px;
+}
+#menu .activeWallet{
+	background-color: #076191;
+	background: rgba(7, 97, 145, 1);
+}
+#menu .activeWallet a:hover{
+	background-color: #076191;
+	background: rgba(7, 97, 145, 1);
+}
+#menu .activeWallet a{color: #ffffff;}
+.myETP_fullpage{top: 9rem;}
+.myETP_caption{top: 16rem;}
+.myETP_caption h1{font-size: 6rem; font-weight: 400;}
+.myETP_caption p{font-size: 1.8rem;}
+.n_btn_mtrs{
+    border-radius: 30px;
+    letter-spacing: 1px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-weight: 500;
+    border-color: #1b96ed;
+    background-color: #1b96ed;
+}
+/***********Pulse Grow*************/
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  border-color: #1b96ed;
+  background-color: #1b96ed;
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.section1-top{margin-top: 0.1rem;}
+.section1-top h1{color: #ffffff;font-size: 4.2rem;font-weight: 400;margin-bottom: 1.4rem;}
+.digital_1 .thumbnail, .digital_2 .thumbnail, .digital_3 .thumbnail{background-color: transparent;border: 0px;}
+.digital_1 .thumbnail h3, .digital_2 .thumbnail h3, .digital_3 .thumbnail h3{font-size: 2rem;color: #ffffff;font-weight: 400;}
+.digital_1 img{width: 10rem; height: 10rem;}
+.digital_2 img{width: 10rem; height: 10rem;}
+.digital_3 img{width: 10rem; height: 10rem;}
+
+
+
+
+
+
+
+
+
+
+/***********Responsive CSS*********/
+@media (max-width: 767px) and (min-width: 280px){
+	.left_section1{display: none;}
+}
