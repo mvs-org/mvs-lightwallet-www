@@ -45,13 +45,13 @@ body{
 	color: #fff;
 }
 .etp_navbarheader a{
-	padding: 6px 12px;
+	padding: 12px 12px;
 	width: 300px;
 	height: 90px;
 }
 .etp_logo img{
-	width: 276px;
-	height: 75px;
+	width: auto;
+	height: auto;
 }
 #menu .activeWallet{
 	background-color: #076191;
