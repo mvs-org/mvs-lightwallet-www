@@ -20,8 +20,6 @@ body{
 	color: #000;
 }
 #menu li.active{
-	background-color: #076191;
-	background: rgba(7, 97, 145, 0.8);
 	color: #ffffff;
 }
 #menu li a{
@@ -35,7 +33,10 @@ body{
 #menu li.active a:hover{
 	color: #000;
 }
+#menu > li > a:hover, #menu > li > a:focus, #menu li.active{background-color: #Ff7a58;background: rgba(255, 122, 88, 0.8);color: #ffffff;}
 #menu li:hover{
+	background-color: #Ff7a58;
+	background: rgba(255, 122, 88, 0.8);
 }
 #menu li a,
 #menu li.active a{
@@ -54,26 +55,28 @@ body{
 	height: auto;
 }
 #menu .activeWallet{
-	background-color: #076191;
-	background: rgba(7, 97, 145, 1);
+	background-color: #Ff7a58;
+	background: rgba(255, 122, 88, 1);
 }
 #menu .activeWallet a:hover{
-	background-color: #076191;
-	background: rgba(7, 97, 145, 1);
+	background-color: #Ff7a58;
+	background: rgba(255, 122, 88, 1);
 }
 #menu .activeWallet a{color: #ffffff;}
 .myETP_fullpage{top: 9rem;}
-.myETP_caption{top: 16rem;}
-.myETP_caption h1{font-size: 6rem; font-weight: 400;}
-.myETP_caption p{font-size: 1.8rem;}
+.myETP_caption{top: 18rem;}
+.myETP_caption h1{font-size: 6rem; font-weight: bold;text-align: center;}
+.myETP_caption p{font-size: 2rem; padding-top: 2.5rem;}
 .n_btn_mtrs{
-    border-radius: 30px;
-    letter-spacing: 1px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    font-weight: 500;
-    border-color: #1b96ed;
-    background-color: #1b96ed;
+	margin-top: 5rem;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-weight: 500;
+  border-color: #Ff7a58;
+  background-color: #Ff7a58;
+  background: rgba(255, 122, 88, 0.9);
 }
 /***********Pulse Grow*************/
 @-webkit-keyframes hvr-pulse-grow {
@@ -101,8 +104,9 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
-  border-color: #1b96ed;
-  background-color: #1b96ed;
+  border-color: #Ff7a58;
+  background-color: #Ff7a58;
+  background: rgba(255, 122, 88, 1);
   -webkit-animation-name: hvr-pulse-grow;
   animation-name: hvr-pulse-grow;
   -webkit-animation-duration: 0.3s;
@@ -115,15 +119,23 @@ body{
   animation-direction: alternate;
 }
 
-.section1-top{margin-top: 0.1rem;}
-.section1-top h1{color: #ffffff;font-size: 4.2rem;font-weight: 400;margin-bottom: 1.4rem;}
-.digital_1 .thumbnail, .digital_2 .thumbnail, .digital_3 .thumbnail{background-color: transparent;border: 0px;}
-.digital_1 .thumbnail h3, .digital_2 .thumbnail h3, .digital_3 .thumbnail h3{font-size: 2rem;color: #ffffff;font-weight: 400;}
-.digital_1 img{width: 10rem; height: 10rem;}
-.digital_2 img{width: 10rem; height: 10rem;}
-.digital_3 img{width: 10rem; height: 10rem;}
-
-
+.section1-top{margin-top: 0.1rem;padding-left: 0rem;}
+.right_section1{padding-top: 10rem;}
+.right_section1 h1{color: #ffffff;font-size: 3rem;font-weight: 400;margin-bottom: 1.8rem;padding-top: 1rem;}
+.digital_1 .icon-block, .digital_2 .icon-block, .icon-block .icon-block{background-color: transparent;border: 0px;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 2rem;color: #ffffff;font-weight: 400;margin: 0.3rem 0rem;}
+.digital_1 p, .digital_2 p, .digital_3 p{font-size: 1.4rem;color: #c6c4c5;font-weight: 300;text-align: center;}
+.digital_1 img, .digital_2 img, .digital_3 img{margin:auto;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 8rem; height: 8rem;}
+.left_section1{padding:5.6rem 0rem 0rem;}
+.about_h1{color: #ffffff;font-size: 3rem;font-weight: 400;}
+.sec-support img, .sec-news img, .sec-github img{width: 100%;}
+.sec-support h3, .sec-news h3, .sec-github h3{font-size: 1.9rem; padding: 0.9rem 0rem;text-align: center;background-color: #146192;color: #ffffff;font-weight: 400;margin-bottom: 0rem;margin-top: 0.1rem;}
+.sec-support p, .sec-news p, .sec-github p{font-size: 1.4rem; text-align: justify;color: #ffffff;font-weight: 400;margin-bottom: 0rem;}
+.sec-support h4, .sec-news h4, .sec-github h4{text-align: center;background-color: #146192;padding: 0.7rem 0rem;}
+.sec-support h4 .learn_more, .sec-news h4 .learn_more, .sec-github h4 .learn_more{font-size:1rem;color: #ffffff;}
+.sec-support h4 .learn_more:hover, .sec-news h4 .learn_more:hover, .sec-github h4 .learn_more:hover{text-decoration: none;}
+/*.sec-support, .sec-news, .sec-github{padding-left: 1rem;padding-right: 1rem;}*/
 
 
 
@@ -135,4 +147,8 @@ body{
 /***********Responsive CSS*********/
 @media (max-width: 767px) and (min-width: 280px){
 	.left_section1{display: none;}
+}
+/*screen resolutions smaller than 950px height*/
+@media (max-width: 950px){
+   #section1 .left_section1{display: none;}
 }
