@@ -1,154 +1,61 @@
-*{
-	margin:0;
-	padding:0;
-	-webkit-box-sizing: border-box;   
- 	-moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body{
-	background-color:#ffffff;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+*{margin:0;	padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{background-color:#ffffff;font-family: "Montserrat-Medium";}
+@font-face {font-family: "Montserrat-Regular";font-style: normal;font-weight: normal;src:url(../fonts/Montserrat-Regular.otf);}
+@font-face {font-family: "Montserrat-Medium";font-style: normal;font-weight: normal;src:url(../fonts/Montserrat-Medium.otf);}
+@font-face {font-family: "Montserrat-Thin";font-style: normal;font-weight: normal;src:url(../fonts/Montserrat-Thin.otf);}
 /**********NAVIGATION CSS***********/
-.MyETPWallet_nav{
-	height: 90px;
-	background-color: #ffffff;
-	background: rgba(255, 255, 255, 1);
-}
-#menu li {
-	display:inline-block;
-	color: #000;
-}
-#menu li.active{
-	color: #ffffff;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-	font-weight: 400;
-	line-height: 90px;
-	padding: 0px 12px;
-	font-size: 1.4rem;
-}
-#menu li.active a:hover{
-	color: #000;
-}
+.MyETPWallet_nav{height: 90px;background-color: #ffffff;background: rgba(255, 255, 255, 1);}
+#menu li {display:inline-block;color: #000;}
+#menu li.active{color: #ffffff;}
+#menu li a{text-decoration:none;color: #000;font-weight: 400;line-height: 90px;padding: 0px 12px;font-size: 1.4rem;font-family: "Montserrat-Regular";}
+#menu li.active a:hover{color: #000;}
 #menu > li > a:hover, #menu > li > a:focus, #menu li.active{background-color: #Ff7a58;background: rgba(255, 122, 88, 0.8);color: #ffffff;}
-#menu li:hover{
-	background-color: #Ff7a58;
-	background: rgba(255, 122, 88, 0.8);
-}
-#menu li a,
-#menu li.active a{
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
-.etp_navbarheader a{
-	padding: 12px 12px;
-	width: 300px;
-	height: 90px;
-}
-.etp_logo img{
-	width: auto;
-	height: auto;
-}
-#menu .activeWallet{
-	background-color: #Ff7a58;
-	background: rgba(255, 122, 88, 1);
-}
-#menu .activeWallet a:hover{
-	background-color: #Ff7a58;
-	background: rgba(255, 122, 88, 1);
-}
+#menu li:hover{background-color: #Ff7a58;background: rgba(255, 122, 88, 0.8);}
+#menu li a, #menu li.active a{display:block;}
+#menu li.active a{color: #fff;}
+.etp_navbarheader a{padding: 12px 12px;width: 300px;height: 90px;}
+.etp_logo img{width: auto;height: auto;}
+#menu .activeWallet{background-color: #Ff7a58;background: rgba(255, 122, 88, 1);}
+#menu .activeWallet a:hover{background-color: #Ff7a58;background: rgba(255, 122, 88, 1);}
 #menu .activeWallet a{color: #ffffff;}
 .myETP_fullpage{top: 9rem;}
 .myETP_caption{top: 18rem;}
-.myETP_caption h1{font-size: 6rem; font-weight: bold;text-align: center;}
-.myETP_caption p{font-size: 2rem; padding-top: 2.5rem;}
-.n_btn_mtrs{
-	margin-top: 5rem;
-  border-radius: 30px;
-  letter-spacing: 1px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  font-weight: 500;
-  border-color: #Ff7a58;
-  background-color: #Ff7a58;
-  background: rgba(255, 122, 88, 0.9);
-}
+.myETP_caption h1{font-size: 6rem; font-weight: bold;text-align: center;font-family: "Montserrat-Thin"}
+.myETP_caption p{font-size: 2rem; padding-top: 2.5rem;font-family: "Montserrat-Thin";}
+.n_btn_mtrs{margin-top: 5rem;border-radius: 30px;color:#ffffff;letter-spacing: 1px;padding: 1.1rem 2.5rem;-webkit-transition: all .3s ease;transition: all .3s ease;font-weight: 500;border-color: #Ff7a58;background-color: #Ff7a58;background: rgba(255, 122, 88, 0.9);font-family: "Montserrat-Thin";}
 /***********Pulse Grow*************/
 @-webkit-keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+to {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
-
+}
 @keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+to {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
-
-.hvr-pulse-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
 }
-.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
-  border-color: #Ff7a58;
-  background-color: #Ff7a58;
-  background: rgba(255, 122, 88, 1);
-  -webkit-animation-name: hvr-pulse-grow;
-  animation-name: hvr-pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-
+.hvr-pulse-grow {display: inline-block;vertical-align: middle;-webkit-transform: translateZ(0);transform: translateZ(0);box-shadow: 0 0 1px rgba(0, 0, 0, 0);-webkit-backface-visibility: hidden;backface-visibility: hidden;-moz-osx-font-smoothing: grayscale;}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {border-color: #Ff7a58;background-color: #Ff7a58;color:#ffffff;background: rgba(255, 122, 88, 1);-webkit-animation-name: hvr-pulse-grow;animation-name: hvr-pulse-grow;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation-direction: alternate;}
 .section1-top{margin-top: 0.1rem;padding-left: 0rem;}
 .right_section1{padding-top: 10rem;}
-.right_section1 h1{color: #ffffff;font-size: 3rem;font-weight: 400;margin-bottom: 1.8rem;padding-top: 1rem;}
+.right_section1 h1{color: #ffffff;font-size: 3rem;font-weight: 400;margin-bottom: 3.8rem;padding-top: 0rem;font-family: "Montserrat-Thin";}
 .digital_1 .icon-block, .digital_2 .icon-block, .icon-block .icon-block{background-color: transparent;border: 0px;}
-.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 2rem;color: #ffffff;font-weight: 400;margin: 0.3rem 0rem;}
-.digital_1 p, .digital_2 p, .digital_3 p{font-size: 1.4rem;color: #c6c4c5;font-weight: 300;text-align: center;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 2rem;color: #ffffff;font-weight: 400;margin: 0.3rem 0rem;font-family: "Montserrat-Thin";}
+.digital_1 p, .digital_2 p, .digital_3 p{font-size: 1.4rem;color: #c6c4c5;font-weight: 300;text-align: center;font-family: "Montserrat-Thin";}
 .digital_1 img, .digital_2 img, .digital_3 img{margin:auto;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 8rem; height: 8rem;}
 .left_section1{padding:5.6rem 0rem 0rem;}
-.about_h1{color: #ffffff;font-size: 3rem;font-weight: 400;}
+.about_h1{color: #ffffff;font-size: 3rem;font-weight: 400;font-family: "Montserrat-Thin";}
 .sec-support img, .sec-news img, .sec-github img{width: 100%;}
-.sec-support h3, .sec-news h3, .sec-github h3{font-size: 1.9rem; padding: 0.9rem 0rem;text-align: center;background-color: #146192;color: #ffffff;font-weight: 400;margin-bottom: 0rem;margin-top: 0.1rem;}
-.sec-support p, .sec-news p, .sec-github p{font-size: 1.4rem; text-align: justify;color: #ffffff;font-weight: 400;margin-bottom: 0rem;}
-.sec-support h4, .sec-news h4, .sec-github h4{text-align: center;background-color: #146192;padding: 0.7rem 0rem;}
-.sec-support h4 .learn_more, .sec-news h4 .learn_more, .sec-github h4 .learn_more{font-size:1rem;color: #ffffff;}
-.sec-support h4 .learn_more:hover, .sec-news h4 .learn_more:hover, .sec-github h4 .learn_more:hover{text-decoration: none;}
-/*.sec-support, .sec-news, .sec-github{padding-left: 1rem;padding-right: 1rem;}*/
-
-
-
-
-
-
-
-
+.sec-support h3, .sec-news h3, .sec-github h3{font-size: 1.9rem; padding: 0.9rem 0rem;text-align: center;background-color: #Ff7a58;background: rgba(255, 122, 88, 0.3);color: #ffffff;font-weight: 400;margin-bottom: 0rem;margin-top: 0.1rem;font-family: "Montserrat-Thin";}
+.sec-support p, .sec-news p, .sec-github p{font-size: 1.4rem; text-align: justify;color: #ffffff;font-weight: 400;margin-bottom: 0rem;font-family: "Montserrat-Thin";}
 /***********Responsive CSS*********/
 @media (max-width: 767px) and (min-width: 280px){
-	.left_section1{display: none;}
+.left_section1{display: none;}
 }
 /*screen resolutions smaller than 950px height*/
 @media (max-width: 950px){
-   #section1 .left_section1{display: none;}
+#section1 .left_section1{display: none;}
 }
