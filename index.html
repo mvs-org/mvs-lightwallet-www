@@ -10,26 +10,13 @@
 <style type="text/css">
 .section{text-align:center;}
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
-#section0{background-image: url(images/metaversebg.jpg);background-position:center top;}
-#section1{background-image: url(images/metaversebg_sec2.jpg);-moz-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);-webkit-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);padding: 6% 0 0 0;}
-#section2{background-image: url(images/metaversebg_sec2.jpg);-moz-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);-webkit-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);padding: 6% 0 0 0;}
+#section1, #section2{/*-moz-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);-webkit-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);*/padding: 6% 0 0 0;}
+#section0{background: -webkit-linear-gradient(112deg, #1c60e2, #28c6f2);background: -o-linear-gradient(112deg, #1c60e2, #28c6f2);background: -moz-linear-gradient(112deg, #1c60e2, #28c6f2);background: linear-gradient(112deg, #1c60e2, #28c6f2);background-size: 100%;background-position: bottom 0px center;}
+.section .container-fluid{background-image: url(images/group-9.png);background-repeat: repeat;background-size:70%;background-position:left 0px;display: block;height: 100vh;}
+#section0{}
+#section1{/*background-image: url(images/metaversebg_sec2.jpg);*/}
+#section2{/*background-image: url(images/metaversebg_sec2.jpg);*/}
 </style>
-<!-- JS LINKS -->
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
-<script type="text/javascript" src="js/jquery.fullpage.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		sectionsColor: ['#1bbc9b', '#Ff7a58', '#Ff7a58', 'whitesmoke', '#ccddff'],
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-		menu: '#menu',
-		verticalCentered: false,
-		css3:false,
-		scrollingSpeed: 1000
-	});
-});
-</script>
 </head>
 <body>
 <nav id="header" class="navbar navbar-fixed-top MyETPWallet_nav">
@@ -46,10 +33,11 @@ $(document).ready(function() {
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul id="menu" class="nav navbar-nav pull-right">
-	        <li data-menuanchor="firstPage"><a href="#firstPage">FEATURES</a></li>
-					<li data-menuanchor="secondPage"><a href="#secondPage">SERVICES</a></li>
-					<li data-menuanchor="3rdPage"><a href="#3rdPage">ABOUT</a></li>
-					<li class="activeWallet" data-menuanchor="4thpage"><a href="#4thpage">OPEN WALLET</a></li>
+	        <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+					<li data-menuanchor="secondPage"><a href="#secondPage">Features</a></li>
+					<li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
+					<li data-menuanchor="4thPage"><a href="#4thPage">About</a></li>
+					<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">Open Wallet</a></li>
 	      </ul>
       </div>
     </div>
@@ -57,73 +45,95 @@ $(document).ready(function() {
 </nav>
 <div id="fullpage" class="myETP_fullpage">
 	<div class="section" id="section0">
-		<div class="carousel-caption myETP_caption">
-			<h1>Metaverse Light Wallet<br>is Coming</h1>
-			<p>It’s for you to create, save and access your information and interact with Blockchain.</p>
-			<a href="#" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">GET A WALLET <span class="glyphicon glyphicon-play"></span></a>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="col-md-6 col-sm-12 col-xs-12 myETP_caption">
+					<h1>Metaverse Light Wallet Is Coming</h1>
+					<p>It’s for you to create, save and access your information and<br>interact with Blockchain.</p>
+					<a href="#" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">Enter to Wallet</a>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 mac-div">
+					<img src="images/MyETPWallet-imac.png" class="img-responsive" alt="iMac-Wallet">
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="section" id="section1">
-		<div class="container-fluid section1-top">
-			<div class="row">			
-				<div class="col-md-5 col-sm-0 col-xs-0 left_section1">
-					<img src="images/mywallet_imac.png" alt="iphone2" class="img-responsive" />
+		<div class="container section1-top">
+			<div class="col-md-12 col-sm-12 col-xs-12 head-text">
+				<h1>FEATURES</h1>
+				<h3>The featurers of the Metaverse Light Wallet</h3>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 digital_1">
+				<div class="icon-block">
+					<span><img alt="digital assets" class="img-responsive" src="images/m.png" srcset="images/m@2x.png 2x,images/m@3x.png 3x" title="img"></span>
 				</div>
-				<div class="col-md-7 col-sm-12 col-xs-12 right_section1">
-					<h1>METAVERSE WALLET FEATURES</h1>
-					<div class="col-md-4 col-sm-6 col-xs-12 digital_1">
-						<div class="icon-block">
-							<span><img alt="digital assets" class="img-responsive" src="images/icon2.png" title="img"></span>
-						</div>
-						<h3>SECURITY</h3>
-						<p>Seed keys are encrypted in a file and stored on your computer.</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 digital_2">
-						<div class="icon-block">
-							<span><img alt="Digital Identity Design" class="img-responsive" src="images/icon3.png" title="img"></span>
-						</div>
-				      <h3>CONVENIENT</h3>
-				      <p>Do not need to download wallet client, could generate wallet generation and transaction signing happens in the browseraccess the wallet on web.</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 digital_3">
-						<div class="icon-block">
-							<span><img alt="Oracle Intermediary" class="img-responsive" src="images/icon1.png" title="img"></span>
-						</div>
-				      <h3>INTUITIVE DESIGN</h3>
-				      <p>Clean layout and different themes are provided, choose the one suits you best.</p>
-					</div>
+				<h3>Security</h3>
+				<p>Seed keys are encrypted in a file and stored on your computer.</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 digital_2">
+				<div class="icon-block">
+					<span><img alt="Digital Identity Design" class="img-responsive" src="images/n.png" srcset="images/n@2x.png 2x,images/n@3x.png 3x" title="img"></span>
 				</div>
+		      <h3>Convenient</h3>
+		      <p>Do not need to download wallet client, could generate wallet generation and transaction signing happens in the browseraccess the wallet on web.</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 digital_3">
+				<div class="icon-block">
+					<span><img alt="Oracle Intermediary" class="img-responsive" src="images/o.png" srcset="images/o@2x.png 2x,images/o@3x.png 3x" title="img"></span>
+				</div>
+		      <h3>Intuitive design</h3>
+		      <p>Clean layout and different themes are provided, choose the one suits you best.</p>
 			</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
-		<div class="container">
-			<h1 class="about_h1">ABOUT</h1>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="sec-support">
-					<h3>SUPPORT</h3>
-					<img src="images/news1.jpg" class="img-responsive" alt="news">
-					<p>Find out the light wallet guideline and FAQs here.</p>
-				</div>
+		<div class="container section2-top">
+			<div class="col-md-12 col-sm-12 col-xs-12 head-text">
+				<h1>SUPPORT</h1>
+				<h3>Find out the light wallet guideline and FAQs here</h3>
 			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="sec-news">
-					<h3>NEWS</h3>
-					<img src="images/news2.jpg" class="img-responsive" alt="news">
-					<p>Metaverse light wallet is an iterative product, check out the progress news about it.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="sec-github">
-					<h3>GITHUB</h3>
-					<img src="images/news3.jpg" class="img-responsive" alt="news">
-					<p>Metaverse Light wallet is open sourced, get on it and start building up the new features.</p>
-				</div>
+			<div class="container">
+		    <div class="panel-group" id="accordion">
+		        <div class="panel panel-default">
+		            <div class="panel-heading">
+		                <h4 class="panel-title">
+		                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+		                </h4>
+		            </div>
+		            <div id="collapseOne" class="panel-collapse collapse in">
+		                <div class="panel-body">
+		                    Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes. 
+		                    This ensures a valid communication channel for all parties involved in any transactions. 
+		                </div>
+		            </div>
+		        </div>        
+		    </div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- CSS LINKS -->
 <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
+<!-- JS LINKS -->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		sectionsColor: ['#ffffff', '#ffffff', '#ffffff', 'whitesmoke', '#ccddff'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		verticalCentered: false,
+		css3:false,
+		scrollOverflow:true,
+		//continuousVertical: true,
+		scrollingSpeed: 1000
+	});
+});
+</script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/bootstrap.js"></script>
