@@ -147,6 +147,7 @@ transform: scale(1.1);
 	.git_cnt {font-size: 3.4rem;padding: 2.4rem 0rem;line-height: 4.6rem;}
 }
 @media (min-width: 1300px) {
+#header .container{width: 1170px;}
 .MyETPWallet_nav {height: 50px;}
 .etp_navbarheader a {width: 160px;height: 50px;padding: 8px 6px;}
 #section1, #section2, #section3 {padding: 6% 0 0 0;}
@@ -160,6 +161,7 @@ transform: scale(1.1);
 .digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: 8rem;}
 .digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 1.8rem;font-weight: 400;margin: 0.3rem 0rem;}
 .digital_1 p, .digital_2 p, .digital_3 p {font-size: 1.4rem;font-weight: 300;}
+#section2 .container{width: 1170px;}
 .panel-group .panel-heading a{font-size: 1.4rem;}
 .panel-group .panel-heading a.collapsed {font-size: 1.4rem;}
 .panel-group .panel-body {font-size: 1.4rem;}
