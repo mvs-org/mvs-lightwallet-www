@@ -1,4 +1,6 @@
 *{margin:0;	padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+@font-face {font-family: "Roboto";font-style: normal;font-weight: normal;src:url(../fonts/roboto-light.woff2);}
+@font-face {font-family: "Roboto-Bold";font-style: normal;font-weight: normal;src:url(../fonts/Roboto-Bold.woff2);}
 body{background-color:#ffffff;font-family: Roboto,"Helvetica Neue",sans-serif;}
 /**********NAVIGATION CSS***********/
 .MyETPWallet_nav{height: 50px;background-color: #ffffff;
@@ -42,7 +44,7 @@ transform: scale(1.1);
 .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {background-image: linear-gradient(to right, #01c3fb, #3df0f8);color:#ffffff;background: rgba(1, 195, 251, 0.7);-webkit-animation-name: hvr-pulse-grow;animation-name: hvr-pulse-grow;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation-direction: alternate;border: 0px !important;}
 .section1-top{margin-top: 0.1rem;padding-left: 0rem;}
 .head-text{}
-.head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;}
+.head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;font-family: Roboto-Bold;}
 .head-text h3{position:absolute;top:4rem;left:30%;right:30%;color: #5d5d5d;font-size: 2rem;font-weight: 400;margin-bottom: 3.8rem;padding-top: 0rem;}
 .digital_1 .icon-block, .digital_2 .icon-block, .icon-block .icon-block{background-color: transparent;border: 0px;}
 .digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 1.8rem;color: #5d5d5d;font-weight: 400;margin: 0.3rem 0rem;}
