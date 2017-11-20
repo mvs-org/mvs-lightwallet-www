@@ -13,7 +13,7 @@
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
 #section1, #section2, #section3{/*-moz-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);-webkit-box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);box-shadow: inset 100vw 100vh rgba(255, 122, 88, 0.4);*/padding: 6% 0 0 0;}
 #section0{background: -webkit-linear-gradient(112deg, #1c60e2, #28c6f2);background: -o-linear-gradient(112deg, #1c60e2, #28c6f2);background: -moz-linear-gradient(112deg, #1c60e2, #28c6f2);background: linear-gradient(112deg, #1c60e2, #28c6f2);background-size: 100%;background-position: bottom 0px center;}
-.section .container-fluid{background-image: url(images/group-9.svg);background-repeat: repeat;background-position: -240px -400px;
+.section .container-fluid{background-image: url(images/group-9.svg);background-position: -240px -400px;
     background-repeat: repeat;background-size: 120% auto;display: block;height: 100vh;}
 #section0{}
 #section1{}
@@ -22,27 +22,29 @@
 </head>
 <body>
 <nav id="header" class="navbar navbar-fixed-top MyETPWallet_nav">
-	<div class="container" style="min-height: 60px;">
-    <div id="header-container" class="navbar-container">
-      <div class="navbar-header etp_navbarheader">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-        <a id="brand" class="navbar-brand etp_logo" href="./"><img src="images/logo.png" alt="MyETPWallet-logo" class="img-responsive" /></a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul id="menu" class="nav navbar-nav pull-right">
-	        <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-					<li data-menuanchor="secondPage"><a href="#secondPage">Features</a></li>
-					<li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
-					<li data-menuanchor="4thPage"><a href="#4thPage">About</a></li>
-					<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">Coming Soon</a></li>
-	      </ul>
-      </div>
-    </div>
+	<div class="container-fluid">
+		<div class="container" style="min-height: 50px;">
+	    <div id="header-container" class="navbar-container">
+	      <div class="navbar-header etp_navbarheader">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+	        <a id="brand" class="navbar-brand etp_logo" href="./"><img src="images/logo.png" alt="MyETPWallet-logo" class="img-responsive" /></a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul id="menu" class="nav navbar-nav pull-right">
+		        <li data-menuanchor="HomePage"><a href="#HomePage">Home</a></li>
+						<li data-menuanchor="FeaturesPage"><a href="#FeaturesPage">Features</a></li>
+						<li data-menuanchor="ServicesPage"><a href="#ServicesPage">Services</a></li>
+						<li data-menuanchor="AboutPage"><a href="#AboutPage">About</a></li>
+						<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">Coming Soon</a></li>
+		      </ul>
+	      </div>
+	    </div>
+		</div>
 	</div>
 </nav>
 <div id="fullpage" class="myETP_fullpage">
@@ -211,7 +213,7 @@
 			<img src="images/github.png" class="img-responsive github-icon" alt="github">
 			<p class="git_cnt">get Metaverse Light wallet source code on github and start<br>building up the new features.</p>
 		</div>
-		<a href="#" class="btn btn-md dwnload_btn" name="GIT HUB Download" value="GIT HUB Download">GITHUB Download</a>
+		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn" name="GIT HUB Download" value="GIT HUB Download">SOS Code</a>
 	</div>
 </div>
 <!-- CSS LINKS -->
@@ -225,7 +227,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+		anchors: ['HomePage', 'FeaturesPage', 'ServicesPage', 'AboutPage', 'lastPage'],
 		menu: '#menu',
 		verticalCentered: false,
 		css3:false,

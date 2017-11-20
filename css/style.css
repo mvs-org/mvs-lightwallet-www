@@ -3,11 +3,13 @@
 @font-face {font-family: "Roboto-Bold";font-style: normal;font-weight: normal;src:url(../fonts/Roboto-Bold.woff2);}
 body{background-color:#ffffff;font-family: Roboto,"Helvetica Neue",sans-serif;}
 /**********NAVIGATION CSS***********/
-.MyETPWallet_nav{height: 50px;background-color: #ffffff;
-	background: -webkit-linear-gradient(135deg, #1c60e2, #28c6f2);
-    background: -o-linear-gradient(135deg, #1c60e2, #28c6f2);
-    background: -moz-linear-gradient(135deg, #1c60e2, #28c6f2);
-    background: linear-gradient(135deg, #1c60e2, #28c6f2);margin-bottom: 0px;border: 0px;box-shadow: 0 0 2px rgba(40, 198, 242, 0.3);}
+.MyETPWallet_nav{height: 50px;
+background: -webkit-linear-gradient(13deg, #1c60e2, #28c6f2);
+background: -o-linear-gradient(13deg, #1c60e2, #28c6f2);
+background: -moz-linear-gradient(13deg, #1c60e2, #28c6f2);
+background: linear-gradient(13deg, #1c60e2, #28c6f2);margin-bottom: 0px;border: 0px;}
+.MyETPWallet_nav .container-fluid{background-image: url(../images/group-9.svg);background-position: -240px -400px;
+background-repeat: repeat;background-size: 120% auto;}
 #menu li {display:inline-block;color: #ffffff;padding: 0.9rem 1.4rem;}
 #menu li.active{color: #ffffff;}
 #menu li a{text-decoration:none;color: #ffffff;font-weight: 400;padding: 0px 12px;font-size: 16px;}
@@ -19,14 +21,16 @@ body{background-color:#ffffff;font-family: Roboto,"Helvetica Neue",sans-serif;}
 .etp_logo{margin-left: 0px !important;}
 .etp_logo img{width: auto;height: auto;}
 #menu .activeWallet{}
-#menu .activeWallet a{background-image: linear-gradient(to right, #01c3fb, #3df0f8);color: #ffffff;border-radius: 5px;}
+#menu .activeWallet a{background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);
+background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);
+background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);background-image: linear-gradient(to right, #01c3fb, #3df0f8);color: #ffffff;border-radius: 5px;}
 #menu .activeWallet a:hover{background-image: linear-gradient(to right, #01c3fb, #3df0f8);border-radius: 5px;}
 .myETP_fullpage{}
 .myETP_caption{top: 12.4375rem;}
 .myETP_caption h1{font-size: 48px; font-weight: 600;text-align: left;color: #ffffff;}
 .myETP_caption p{font-size: 20px;text-align: left; padding-top: 54px;color: #ffffff;text-shadow: none;}
-.n_btn_mtrs{float:left;font-size:20px;margin-top: 30px;border-radius: 10px;color:#ffffff;letter-spacing: 1px;padding: 8px 26px;-webkit-transition: all .3s ease;transition: all .3s ease;font-weight: 500; background-image: linear-gradient(to right, #01c3fb, #3df0f8);border: 0px !important;}
-.mac-div{top: 16.4375rem;/*position: absolute;bottom: 0rem;right: 8rem;width: 60rem;height: auto;*/}
+.n_btn_mtrs{float:left;font-size:20px;margin-top: 30px;border-radius: 10px;color:#ffffff;letter-spacing: 1px;padding: 8px 26px;-webkit-transition: all .3s ease;transition: all .3s ease;font-weight: 500;background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8); background-image: linear-gradient(to right, #01c3fb, #3df0f8);border: 0px !important;}
+.mac-div{top: 30rem;}
 /***********Pulse Grow*************/
 @-webkit-keyframes hvr-pulse-grow {
 to {
@@ -41,7 +45,7 @@ transform: scale(1.1);
 }
 }
 .hvr-pulse-grow {display: inline-block;vertical-align: middle;-webkit-transform: translateZ(0);transform: translateZ(0);box-shadow: 0 0 1px rgba(0, 0, 0, 0);-webkit-backface-visibility: hidden;backface-visibility: hidden;-moz-osx-font-smoothing: grayscale;border: 0px !important;}
-.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {background-image: linear-gradient(to right, #01c3fb, #3df0f8);color:#ffffff;background: rgba(1, 195, 251, 0.7);-webkit-animation-name: hvr-pulse-grow;animation-name: hvr-pulse-grow;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation-direction: alternate;border: 0px !important;}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);background-image: linear-gradient(to right, #01c3fb, #3df0f8);color:#ffffff;background: rgba(1, 195, 251, 0.7);-webkit-animation-name: hvr-pulse-grow;animation-name: hvr-pulse-grow;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation-direction: alternate;border: 0px !important;}
 .section1-top{margin-top: 0.1rem;padding-left: 0rem;}
 .head-text{}
 .head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;font-family: Roboto-Bold;}
@@ -78,6 +82,7 @@ transform: scale(1.1);
 }
 .panel-group .panel-heading a {
   display: block;
+  background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);
   background-image: linear-gradient(100deg, #1f52e0, #03d8f5);
   color: #ffffff;
   padding: 15px;
@@ -109,7 +114,7 @@ transform: scale(1.1);
   padding: 15px;
   text-align: left;
   font-size: 1.4rem;
-  background-image: linear-gradient(100deg, #1f52e0, #03d8f5);
+  background-image: -webkit-linear-gradient(100deg, #1f52e0, #03d8f5);background-image: -o-linear-gradient(100deg, #1f52e0, #03d8f5);background-image: -moz-linear-gradient(100deg, #1f52e0, #03d8f5);background-image: linear-gradient(100deg, #1f52e0, #03d8f5);
 }
 .panel-group .panel {
   background-color: transparent;
@@ -119,7 +124,7 @@ transform: scale(1.1);
 .panel-group .panel-body ol:last-child {
   margin-bottom: 0;
 }
-.dwnload_btn{border-radius: 5px;background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);color: #ffffff;font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;border: 0px !important;}
+.dwnload_btn{border-radius: 5px;background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);color: #ffffff;font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;border: 0px !important;}
 .dwnload_btn:hover, .dwnload_btn:active{color: #ffffff;border: 0px !important;}
 .github-icon{width: 46px;height: auto;margin:1rem auto;}
 .git_cnt{font-size: 1.6rem;color: #5d5d5d;text-align: center;line-height: 2.2rem;font-weight: 500;padding: 1.8rem 0rem;}
@@ -157,7 +162,38 @@ transform: scale(1.1);
 .myETP_caption h1{font-size: 48px;}
 .myETP_caption p{font-size: 20px;}
 .n_btn_mtrs{float: left;font-size: 20px;margin-top: 30px;}
-.mac-div {top: 16.4375rem;}
+.mac-div {top: 30rem;}
+.head-text h1{font-size: 10rem;}
+.head-text h3{font-size: 2rem;top: 4rem;}
+.digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: 8rem;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 1.8rem;font-weight: 400;margin: 0.3rem 0rem;}
+.digital_1 p, .digital_2 p, .digital_3 p {font-size: 1.4rem;font-weight: 300;}
+#section2 .container{width: 1170px;}
+.panel-group .panel-heading a{font-size: 1.4rem;}
+.panel-group .panel-heading a.collapsed {font-size: 1.4rem;}
+.panel-group .panel-body {font-size: 1.4rem;}
+.panel-group .panel-heading a:after {font-size: 1.8rem;}
+.dwnload_btn {font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
+.github-icon {width: 46px;margin: 1rem auto;}
+.git_cnt {font-size: 1.6rem;padding: 1.8rem 0rem;line-height: 2.2rem;}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+#section0 .container-fluid .container {padding: 10rem 1rem;}
+#header .container{width: 1170px;}
+.MyETPWallet_nav {height: 50px;}
+.etp_navbarheader a {width: 160px;height: 50px;padding: 8px 6px;}
+#section1, #section2, #section3 {padding: 6% 0 0 0;}
+#menu li {padding: 0.9rem 1.4rem;}
+.myETP_caption h1{font-size: 48px;}
+.myETP_caption p{font-size: 20px;}
+.n_btn_mtrs{float: left;font-size: 20px;margin-top: 30px;}
+.mac-div {top: 30rem;}
 .head-text h1{font-size: 10rem;}
 .head-text h3{font-size: 2rem;top: 4rem;}
 .digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: 8rem;}
