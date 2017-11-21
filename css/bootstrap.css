@@ -1597,9 +1597,29 @@ pre code {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
     width: 1170px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1300px;
+  }
+}
+@media (min-width: 1680px) {
+  .container {
+    width: 1500px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1700px;
+  }
+}
+@media (min-width: 2560px) {
+  .container {
+    width: 1900px;
   }
 }
 .container-fluid {
