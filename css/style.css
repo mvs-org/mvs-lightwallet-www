@@ -31,6 +31,7 @@ background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);background-im
 .myETP_caption p{font-size: 20px;text-align: left; padding-top: 54px;color: #ffffff;text-shadow: none;}
 .n_btn_mtrs{float:left;font-size:20px;margin-top: 30px;border-radius: 10px;color:#ffffff;letter-spacing: 1px;padding: 8px 26px;-webkit-transition: all .3s ease;transition: all .3s ease;font-weight: 500;background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8); background-image: linear-gradient(to right, #01c3fb, #3df0f8);border: 0px !important;}
 .mac-div{top: 30rem;}
+.mac-div img{float: right;margin: auto;}
 /***********Pulse Grow*************/
 @-webkit-keyframes hvr-pulse-grow {
 to {
@@ -54,7 +55,7 @@ transform: scale(1.1);
 .digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 1.8rem;color: #5d5d5d;font-weight: 400;margin: 0.3rem 0rem;}
 .digital_1 p, .digital_2 p, .digital_3 p{font-size: 1.4rem;color: #5d5d5d;font-weight: 300;text-align: center;}
 .digital_1 img, .digital_2 img, .digital_3 img{margin:auto;}
-.digital_1 img, .digital_2 img, .digital_3 img{width: 8rem; height: 8rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 8rem; height: auto;}
 
 .about_h1{color: #ffffff;font-size: 3rem;font-weight: 400;}
 .sec-support img, .sec-news img, .sec-github img{width: 100%;}
@@ -105,6 +106,7 @@ transform: scale(1.1);
   font-size: 1.8rem;
 }
 .panel-group .panel-heading a.collapsed:after {
+	color: #1292ea;
   content: '+';
 }
 .panel-group .panel-collapse {
@@ -125,86 +127,183 @@ transform: scale(1.1);
   margin-bottom: 0;
 }
 .dwnload_btn{border-radius: 5px;background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);color: #ffffff;font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;border: 0px !important;}
-.dwnload_btn:hover, .dwnload_btn:active{color: #ffffff;border: 0px !important;}
+.dwnload_btn:hover, .dwnload_btn:focus, .dwnload_btn:active{color: #ffffff;border: 0px !important;border-radius: 5px;background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);}
 .github-icon{width: 46px;height: auto;margin:1rem auto;}
 .git_cnt{font-size: 1.6rem;color: #5d5d5d;text-align: center;line-height: 2.2rem;font-weight: 500;padding: 1.8rem 0rem;}
+.navbar-toggle{background-color: transparent;border: 1px solid #04d0f4;}
+.icon-bar{background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);}
 /***********Responsive CSS*********/
 @media (min-width: 767px) {
-	#header .container{width: 990px;}
-	.MyETPWallet_nav {height: 100px;}
-	.etp_navbarheader a {width: 220px;height: auto;padding: 18px 6px;}
-	#section1, #section2, #section3 {padding: 8% 0 0 0;}
-	#menu li {padding: 2.8rem 1.4rem;}
-	.myETP_caption h1{font-size: 6.3rem;}
-	.myETP_caption p{font-size: 2.63rem;}
-	.n_btn_mtrs{float: none;font-size: 3.6rem;margin-top: 10rem;}
-	.mac-div{top:40rem; }
-	.head-text h1{font-size: 14rem;}
-	.head-text h3{font-size: 3rem;left: 0%;right: 0%;text-align: center;top: 5.5rem;}
-	.digital_1 img, .digital_2 img, .digital_3 img {width: 20rem;height: 20rem;}
-	.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 4.4rem;font-weight: 800;margin: 1rem 0rem;}
-	.digital_1 p, .digital_2 p, .digital_3 p {font-size: 2.4rem;font-weight: 400;}
-	#section2 .container{width: 990px;}
-	.panel-group .panel-heading a{font-size: 3rem;}
-	.panel-group .panel-heading a.collapsed {font-size: 3rem;}
-	.panel-group .panel-body {font-size: 3rem;}
-	.panel-group .panel-heading a:after {font-size: 3.4rem;}
-	.dwnload_btn {font-size: 2.8rem;padding: 1.6rem 4rem;margin-bottom: 2rem;margin-top: 10rem;}
-	.github-icon {width: 150px;margin: 2.4rem auto;}
-	.git_cnt {font-size: 3.4rem;padding: 2.4rem 0rem;line-height: 4.6rem;}
+#header .container{width: 975px;}
+.MyETPWallet_nav {height: 76px;}
+.etp_navbarheader a {width: 220px;height: auto;padding: 18px 6px;}
+#section1, #section2, #section3 {padding: 8% 0 0 0;}
+.myETP_caption {top: 12.4375rem;}
+#menu li {padding: 2rem 1.4rem;}
+.myETP_caption h1{font-size: 6.3rem;}
+.myETP_caption p{font-size: 2.63rem;}
+.n_btn_mtrs{float: none;font-size: 3.6rem;margin-top: 10rem;}
+.mac-div{top:40rem;}
+.mac-div img{float: none;margin: auto;width: 500px;height: auto;}
+.section1-top{margin-top: 0.1rem;}
+.section3-top {margin-top: 0.1rem;}
+.head-text h1{font-size: 11rem;}
+.head-text h3{font-size: 2.4rem;left: 0%;right: 0%;text-align: center;top: 5rem;}
+.digital_1 img, .digital_2 img, .digital_3 img {width: 20rem;height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 4.4rem;font-weight: 800;margin: 1rem 0rem;}
+.digital_1 p, .digital_2 p, .digital_3 p {font-size: 2.4rem;font-weight: 400;}
+#section2 .container{width: 990px;}
+.panel-group .panel-heading a, .panel-group .panel-heading a.collapsed, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .git_cnt {font-size: 2.4rem;}
+.dwnload_btn {padding: 1.4rem 3rem;margin-bottom: 2rem;margin-top: 10rem;}
+.github-icon {width: 150px;margin: 2.4rem auto;}
+.git_cnt {padding: 2.4rem 0rem;line-height: 4.4rem;}
+}
+
+@media (min-width: 992px) {
+#header .container{width: 970px;}
+#section2 .container{width: 970px;}
+#section1, #section2, #section3 {padding: 3% 0 0 0;}
+.myETP_caption {top: 10rem;}
+.MyETPWallet_nav{height: 60px;}
+.etp_navbarheader a {width: 225px;height: 60px;padding: 8px 6px;}
+#menu li {padding: 0.9rem 1.4rem;}
+#menu li a, #menu li.active a{padding: 0.64rem 1.6rem;}
+.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
+.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.mac-div img{float: none;margin: auto;width: 325px;height: auto;}
+.mac-div {top: 23rem;}
+.myETP_caption h1 {font-size: 4rem;}
+.n_btn_mtrs{float: left;margin-top: 3.5rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 1.3rem;}
+.head-text h1 {font-size: 8rem;}
+.head-text h3 {font-size: 2rem;top: 3.1rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 9rem; height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 2.1rem;}
+.section1-top {margin-top: 2rem;}
+.section3-top {margin-top: 2rem;}
+.github-icon {width: 100px;margin: 1rem auto;}
+.dwnload_btn {font-size: 1.2rem;padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 2.2rem;}
+.git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 }
 @media (min-width: 1300px) {
 #header .container{width: 1170px;}
 .MyETPWallet_nav {height: 50px;}
 .etp_navbarheader a {width: 160px;height: 50px;padding: 8px 6px;}
-#section1, #section2, #section3 {padding: 6% 0 0 0;}
-#menu li {padding: 0.9rem 1.4rem;}
-.myETP_caption h1{font-size: 48px;}
-.myETP_caption p{font-size: 20px;}
-.n_btn_mtrs{float: left;font-size: 20px;margin-top: 30px;}
-.mac-div {top: 30rem;}
+#section1, #section2, #section3 {padding: 3% 0 0 0;}
+.MyETPWallet_nav .container-fluid{background-position: -240px -400px;background-size: 120% auto;}
+.section .container-fluid{background-position: -240px -400px;background-size: 120% auto;}
+#menu li {padding: 0.87rem 1.4rem;}
+.myETP_caption {top: 12.4375rem;}
+.myETP_caption h1{font-size: 5rem;}
+.myETP_caption p{font-size: 1.6rem;padding-top: 3rem;}
+.n_btn_mtrs{float: left;font-size: 1.6rem;margin-top: 30px;}
+.mac-div {top: 29.5rem;}
+.mac-div img{float: none;margin: auto;width: 410px;height: auto;}
+.section1-top{margin-top: 0.1rem;}
+.section3-top {margin-top: 0.1rem;}
 .head-text h1{font-size: 10rem;}
-.head-text h3{font-size: 2rem;top: 4rem;}
-.digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: 8rem;}
-.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 1.8rem;font-weight: 400;margin: 0.3rem 0rem;}
+.head-text h3 {font-size: 2rem;top: 4.5rem;}
+.digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 1.8rem;}
 .digital_1 p, .digital_2 p, .digital_3 p {font-size: 1.4rem;font-weight: 300;}
 #section2 .container{width: 1170px;}
-.panel-group .panel-heading a{font-size: 1.4rem;}
-.panel-group .panel-heading a.collapsed {font-size: 1.4rem;}
-.panel-group .panel-body {font-size: 1.4rem;}
-.panel-group .panel-heading a:after {font-size: 1.8rem;}
-.dwnload_btn {font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
+.panel-group .panel-heading a, .panel-group .panel-heading a.collapsed, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .git_cnt {font-size: 1.4rem;}
+.dwnload_btn {padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
 .github-icon {width: 46px;margin: 1rem auto;}
-.git_cnt {font-size: 1.6rem;padding: 1.8rem 0rem;line-height: 2.2rem;}
+.section1-top {margin-top: 2rem;}
+.section2-top {margin-top: 2rem;}
+.section3-top {margin-top: 2rem;}
+.git_cnt {padding: 1.8rem 0rem;line-height: 2.2rem;}
 }
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
-#section0 .container-fluid .container {padding: 10rem 1rem;}
-#header .container{width: 1170px;}
-.MyETPWallet_nav {height: 50px;}
-.etp_navbarheader a {width: 160px;height: 50px;padding: 8px 6px;}
-#section1, #section2, #section3 {padding: 6% 0 0 0;}
-#menu li {padding: 0.9rem 1.4rem;}
-.myETP_caption h1{font-size: 48px;}
-.myETP_caption p{font-size: 20px;}
-.n_btn_mtrs{float: left;font-size: 20px;margin-top: 30px;}
-.mac-div {top: 30rem;}
-.head-text h1{font-size: 10rem;}
-.head-text h3{font-size: 2rem;top: 4rem;}
-.digital_1 img, .digital_2 img, .digital_3 img {width: 8rem;height: 8rem;}
-.digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 1.8rem;font-weight: 400;margin: 0.3rem 0rem;}
-.digital_1 p, .digital_2 p, .digital_3 p {font-size: 1.4rem;font-weight: 300;}
-#section2 .container{width: 1170px;}
-.panel-group .panel-heading a{font-size: 1.4rem;}
-.panel-group .panel-heading a.collapsed {font-size: 1.4rem;}
-.panel-group .panel-body {font-size: 1.4rem;}
-.panel-group .panel-heading a:after {font-size: 1.8rem;}
-.dwnload_btn {font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
-.github-icon {width: 46px;margin: 1rem auto;}
-.git_cnt {font-size: 1.6rem;padding: 1.8rem 0rem;line-height: 2.2rem;}
+@media (min-width: 1440px){
+#header .container{width: 1300px;}
+#section2 .container{width: 1300px;}
+#section1, #section2, #section3 {padding: 4% 0 0 0;}
+.myETP_caption {top: 16rem;}
+.MyETPWallet_nav{height: 60px;}
+.etp_navbarheader a {width: 225px;height: 60px;padding: 8px 6px;}
+#menu li a, #menu li.active a{padding: 0.87rem 1.6rem;}
+.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
+.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.mac-div img{float: none;margin: auto;width: 420px;height: auto;}
+.mac-div {top: 35rem;}
+.myETP_caption h1 {font-size: 6rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 1.6rem;}
+.head-text h1 {font-size: 12rem;}
+.head-text h3 {font-size: 2.6rem;top: 5rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 4.2rem;}
+.section1-top {margin-top: 9rem;}
+.section3-top {margin-top: 9rem;}
+.github-icon {width: 120px;margin: 1rem auto;}
+.git_cnt {padding: 1.8rem 0rem;line-height: 3rem;}
+}
+@media (min-width: 1680px){
+#header .container{width: 1500px;}
+#section2 .container{width: 1500px;}
+#section1, #section2, #section3 {padding: 2% 0 0 0;}
+.myETP_caption {top: 20rem;}
+.MyETPWallet_nav{height: 70px;}
+.etp_navbarheader a {width: 265px;height: 70px;padding: 8px 6px;}
+#menu li a, #menu li.active a{padding: 1.3rem 2.3rem;}
+.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
+.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.mac-div img{float: none;margin: auto;width: 545px;height: auto;}
+.mac-div {top: 34rem;}
+.myETP_caption h1 {font-size: 7rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 2rem;}
+.head-text h1 {font-size: 12rem;}
+.head-text h3 {font-size: 2.4rem;top: 5rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 4.2rem;}
+.section1-top {margin-top: 10rem;}
+.section3-top {margin-top: 10rem;}
+.github-icon {width: 120px;margin: 1rem auto;}
+.git_cnt {padding: 1.8rem 0rem;line-height: 4rem;}
+}
+@media (min-width: 1920px){
+#header .container{width: 1700px;}
+#section2 .container{width: 1700px;}
+#section1, #section2, #section3 {padding: 4% 0 0 0;}
+.myETP_caption {top: 25rem;}
+.MyETPWallet_nav{height: 80px;}
+.etp_navbarheader a {width: 275px;height: 80px;padding: 8px 6px;}
+#menu li a, #menu li.active a{padding: 1.6rem 2.5rem;}
+.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
+.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.mac-div img{float: none;margin: auto;width: 620px;height: auto;}
+.mac-div {top: 40rem;}
+.myETP_caption h1 {font-size: 7.5rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 2.4rem;}
+.head-text h1 {font-size: 16rem;}
+.head-text h3 {font-size: 3rem;top: 6rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 4.2rem;}
+.section1-top {margin-top: 11rem;}
+.section3-top {margin-top: 14rem;}
+.github-icon {width: 120px;margin: 1rem auto;}
+.git_cnt {padding: 1.8rem 0rem;line-height: 4rem;}
+}
+@media (min-width: 2560px){
+#header .container{width: 1900px;}
+#section2 .container{width: 1900px;}
+#section1, #section2, #section3 {padding: 4% 0 0 0;}
+.myETP_caption {top: 30rem;}
+.MyETPWallet_nav{height: 90px;}
+.etp_navbarheader a {width: 315px;height: 90px;padding: 8px 6px;}
+#menu li a, #menu li.active a{padding: 2rem 3rem;}
+.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
+.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.mac-div img{float: none;margin: auto;width: 710px;height: auto;}
+.mac-div {top: 55rem;}
+.myETP_caption h1 {font-size: 9rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 3rem;}
+.head-text h1 {font-size: 18rem;}
+.head-text h3 {font-size: 4rem;top: 6rem;}
+.digital_1 img, .digital_2 img, .digital_3 img{width: 12rem; height: auto;}
+.digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 4.8rem;}
+.section1-top {margin-top: 14rem;}
+.section3-top {margin-top: 22rem;}
+.github-icon {width: 135px;margin: 1rem auto;}
+.git_cnt {padding: 1.8rem 0rem;line-height: 4.2rem;}
 }
