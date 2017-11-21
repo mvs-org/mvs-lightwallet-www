@@ -50,7 +50,7 @@ transform: scale(1.1);
 .section1-top{margin-top: 0.1rem;padding-left: 0rem;}
 .head-text{}
 .head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;font-family: Roboto-Bold;}
-.head-text h3{position:absolute;top:4rem;left:30%;right:30%;color: #5d5d5d;font-size: 2rem;font-weight: 400;margin-bottom: 3.8rem;padding-top: 0rem;}
+.head-text h3{position:absolute;top:4rem;left:30%;right:30%;color: #5d5d5d;font-size: 2rem;font-weight: 800;margin-bottom: 3.8rem;padding-top: 0rem;}
 .digital_1 .icon-block, .digital_2 .icon-block, .icon-block .icon-block{background-color: transparent;border: 0px;}
 .digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 1.8rem;color: #5d5d5d;font-weight: 400;margin: 0.3rem 0rem;}
 .digital_1 p, .digital_2 p, .digital_3 p{font-size: 1.4rem;color: #5d5d5d;font-weight: 300;text-align: center;}
@@ -86,12 +86,26 @@ transform: scale(1.1);
   background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);
   background-image: linear-gradient(100deg, #1f52e0, #03d8f5);
   color: #ffffff;
-  padding: 15px;
+  padding: 10px 15px;
   text-decoration: none;
   position: relative;
   text-align: left;
   font-size: 1.4rem;
+  /*-webkit-transition: all .5s ease;
+  transition: all .5s ease;*/
 }
+/*@-webkit-keyframes on-pop {
+to {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+}
+@keyframes on-pop {
+to {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+}*/
 .panel-group .panel-heading a.collapsed {
   background: #ffffff;
   color: #5d5d5d;
@@ -110,6 +124,7 @@ transform: scale(1.1);
   content: '+';
 }
 .panel-group .panel-collapse {
+	/*-webkit-animation-name: on-pop;animation-name: on-pop;-webkit-animation-duration: 0.5s;animation-duration: 0.5s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: initial;animation-iteration-count: initial;-webkit-animation-direction: alternate;animation-direction: alternate;*/
 }
 .panel-group .panel-body {
 	color: #ffffff;
@@ -121,11 +136,7 @@ transform: scale(1.1);
 .panel-group .panel {
   background-color: transparent;
 }
-.panel-group .panel-body p:last-child,
-.panel-group .panel-body ul:last-child,
-.panel-group .panel-body ol:last-child {
-  margin-bottom: 0;
-}
+
 .dwnload_btn{border-radius: 5px;background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);color: #ffffff;font-size: 1.4rem;padding: 0.65rem 2rem;margin-bottom: 2rem;border: 0px !important;}
 .dwnload_btn:hover, .dwnload_btn:focus, .dwnload_btn:active{color: #ffffff;border: 0px !important;border-radius: 5px;background-image: -webkit-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -o-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: -moz-linear-gradient(101deg, #1d57e0, #04d0f4);background-image: linear-gradient(101deg, #1d57e0, #04d0f4);box-shadow: 0 5px 10px 0 rgba(225, 241, 255, 0.54);}
 .github-icon{width: 46px;height: auto;margin:1rem auto;}
@@ -140,6 +151,7 @@ transform: scale(1.1);
 #section1, #section2, #section3 {padding: 8% 0 0 0;}
 .myETP_caption {top: 12.4375rem;}
 #menu li {padding: 2rem 1.4rem;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: center;background-size: cover;}
 .myETP_caption h1{font-size: 6.3rem;}
 .myETP_caption p{font-size: 2.63rem;}
 .n_btn_mtrs{float: none;font-size: 3.6rem;margin-top: 10rem;}
@@ -165,24 +177,23 @@ transform: scale(1.1);
 #section1, #section2, #section3 {padding: 3% 0 0 0;}
 .myETP_caption {top: 10rem;}
 .MyETPWallet_nav{height: 60px;}
-.etp_navbarheader a {width: 225px;height: 60px;padding: 8px 6px;}
-#menu li {padding: 0.9rem 1.4rem;}
+.etp_navbarheader a {width: 220px;height: auto;padding: 8px 6px;}
+#menu li {padding: 1.36rem 1.4rem;}
 #menu li a, #menu li.active a{padding: 0.64rem 1.6rem;}
-.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
-.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -128px -585px;background-size: 142.5% auto;}
 .mac-div img{float: none;margin: auto;width: 325px;height: auto;}
-.mac-div {top: 23rem;}
-.myETP_caption h1 {font-size: 4rem;}
-.n_btn_mtrs{float: left;margin-top: 3.5rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 1.3rem;}
-.head-text h1 {font-size: 8rem;}
-.head-text h3 {font-size: 2rem;top: 3.1rem;}
+.mac-div {top: 24rem;}
+.myETP_caption h1 {font-size: 4.4rem;}
+.n_btn_mtrs{font-size:1.8rem;float: left;margin-top: 3.5rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .dwnload_btn{font-size: 1.46rem;}
+.head-text h1 {font-size: 11rem;}
+.head-text h3 {font-size: 2rem;top: 4.8rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 9rem; height: auto;}
 .digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 2.1rem;}
-.section1-top {margin-top: 2rem;}
+.section1-top {margin-top: 6rem;}
 .section3-top {margin-top: 2rem;}
 .github-icon {width: 100px;margin: 1rem auto;}
-.dwnload_btn {font-size: 1.2rem;padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 2.2rem;}
+.dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 2.2rem;}
 .git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 }
 @media (min-width: 1300px) {
@@ -190,8 +201,7 @@ transform: scale(1.1);
 .MyETPWallet_nav {height: 50px;}
 .etp_navbarheader a {width: 160px;height: 50px;padding: 8px 6px;}
 #section1, #section2, #section3 {padding: 3% 0 0 0;}
-.MyETPWallet_nav .container-fluid{background-position: -240px -400px;background-size: 120% auto;}
-.section .container-fluid{background-position: -240px -400px;background-size: 120% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -240px -400px;background-size: 120% auto;}
 #menu li {padding: 0.87rem 1.4rem;}
 .myETP_caption {top: 12.4375rem;}
 .myETP_caption h1{font-size: 5rem;}
@@ -211,7 +221,7 @@ transform: scale(1.1);
 .dwnload_btn {padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
 .github-icon {width: 46px;margin: 1rem auto;}
 .section1-top {margin-top: 2rem;}
-.section2-top {margin-top: 2rem;}
+.section2-top {margin-top: 0rem;}
 .section3-top {margin-top: 2rem;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 2.2rem;}
 }
@@ -223,8 +233,7 @@ transform: scale(1.1);
 .MyETPWallet_nav{height: 60px;}
 .etp_navbarheader a {width: 225px;height: 60px;padding: 8px 6px;}
 #menu li a, #menu li.active a{padding: 0.87rem 1.6rem;}
-.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
-.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -128px -585px;background-size: 142.5% auto;}
 .mac-div img{float: none;margin: auto;width: 420px;height: auto;}
 .mac-div {top: 35rem;}
 .myETP_caption h1 {font-size: 6rem;}
@@ -246,8 +255,7 @@ transform: scale(1.1);
 .MyETPWallet_nav{height: 70px;}
 .etp_navbarheader a {width: 265px;height: 70px;padding: 8px 6px;}
 #menu li a, #menu li.active a{padding: 1.3rem 2.3rem;}
-.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
-.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -128px -585px;background-size: 142.5% auto;}
 .mac-div img{float: none;margin: auto;width: 545px;height: auto;}
 .mac-div {top: 34rem;}
 .myETP_caption h1 {font-size: 7rem;}
@@ -269,8 +277,7 @@ transform: scale(1.1);
 .MyETPWallet_nav{height: 80px;}
 .etp_navbarheader a {width: 275px;height: 80px;padding: 8px 6px;}
 #menu li a, #menu li.active a{padding: 1.6rem 2.5rem;}
-.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
-.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -490px -655px;background-size: 135.5% auto;}
 .mac-div img{float: none;margin: auto;width: 620px;height: auto;}
 .mac-div {top: 40rem;}
 .myETP_caption h1 {font-size: 7.5rem;}
@@ -292,11 +299,10 @@ transform: scale(1.1);
 .MyETPWallet_nav{height: 90px;}
 .etp_navbarheader a {width: 315px;height: 90px;padding: 8px 6px;}
 #menu li a, #menu li.active a{padding: 2rem 3rem;}
-.MyETPWallet_nav .container-fluid{background-position: -128px -585px;background-size: 90% auto;}
-.section .container-fluid {background-position: -128px -585px;background-size: 90% auto;}
+.MyETPWallet_nav .container-fluid, .section .container-fluid{background-position: -342px -845px;background-size: 130.5% auto;}
 .mac-div img{float: none;margin: auto;width: 710px;height: auto;}
 .mac-div {top: 55rem;}
-.myETP_caption h1 {font-size: 9rem;}
+.myETP_caption h1 {font-size: 8.7rem;}
 #menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 3rem;}
 .head-text h1 {font-size: 18rem;}
 .head-text h3 {font-size: 4rem;top: 6rem;}
