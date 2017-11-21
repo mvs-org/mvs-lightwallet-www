@@ -221,7 +221,7 @@ transform: scale(1.1);
 .dwnload_btn {padding: 0.65rem 2rem;margin-bottom: 2rem;margin-top: 0rem;}
 .github-icon {width: 46px;margin: 1rem auto;}
 .section1-top {margin-top: 2rem;}
-.section2-top {margin-top: 2rem;}
+.section2-top {margin-top: 0rem;}
 .section3-top {margin-top: 2rem;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 2.2rem;}
 }
