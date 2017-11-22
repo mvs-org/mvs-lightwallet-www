@@ -262,6 +262,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .MyETPWallet_nav{height: 90px;}
 .etp_navbarheader a {width: 315px;height: 90px;padding: 8px 6px;}
 #menu li a, #menu li.active a{padding: 2rem 3rem;}
+#menu .language_icon a{padding-top: 3.5rem;}
 .MyETPWallet_nav .container-fluid, #section0 .container-fluid{background-position: -342px -845px;background-size: 130.5% auto;}
 .mac-div img{float: none;margin: auto;width: 710px;height: auto;}
 .mac-div {top: 55rem;}
