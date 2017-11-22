@@ -39,7 +39,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {background-image: -webkit-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -o-linear-gradient(to right, #01c3fb, #3df0f8);background-image: -moz-linear-gradient(to right, #01c3fb, #3df0f8);background-image: linear-gradient(to right, #01c3fb, #3df0f8);color:#ffffff;background: rgba(1, 195, 251, 0.7);-webkit-animation-name: hvr-pulse-grow;animation-name: hvr-pulse-grow;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation-direction: alternate;border: 0px !important;}
 .section1-top{margin-top: 0.1rem;padding-left: 0rem;}
 .head-text{}
-.head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;font-family: Roboto-Bold;}
+.head-text h1{color: #d6d6d6;font-size: 10rem;font-weight: bold;font-family: Roboto-Bold;margin-bottom: 0.0rem;}
 .head-text h3{position:absolute;top:4rem;left:30%;right:30%;color: #5d5d5d;font-size: 2rem;font-weight: 800;margin-bottom: 3.8rem;padding-top: 0rem;}
 .digital_1 .icon-block, .digital_2 .icon-block, .icon-block .icon-block{background-color: transparent;border: 0px;}
 .digital_1 h3, .digital_2 h3, .digital_3 h3{font-size: 1.8rem;color: #5d5d5d;font-weight: 400;margin: 0.3rem 0rem;}
@@ -104,7 +104,8 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 @media (min-width: 992px) {
 #header .container{width: 970px;}
 #section2 .container{width: 970px;}
-#section1, #section2, #section3 {padding: 3% 0 0 0;}
+#section2 {padding: 1% 0 0 0;}
+#section1, #section3 {padding: 3% 0 0 0;}
 .myETP_caption {top: 10rem;}
 .MyETPWallet_nav{height: 60px;}
 .etp_navbarheader a {width: 220px;height: auto;padding: 8px 6px;}
@@ -123,14 +124,15 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .section1-top {margin-top: 6rem;}
 .section3-top {margin-top: 2rem;}
 .github-icon {width: 100px;margin: 1rem auto;}
-.dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 2.2rem;}
+.dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 0.2rem;}
 .git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 .language_icon .cn, .language_icon .en{height: 3rem;background-size: 70%;}
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 #header .container{width: 970px;}
 #section2 .container{width: 970px;}
-#section1, #section2, #section3 {padding: 3% 0 0 0;}
+#section2 {padding: 1% 0 0 0;}
+#section1, #section3 {padding: 3% 0 0 0;}
 .myETP_caption {top: 10rem;}
 .MyETPWallet_nav{height: 60px;}
 .etp_navbarheader a {width: 220px;height: auto;padding: 8px 6px;}
@@ -149,7 +151,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .section1-top {margin-top: 6rem;}
 .section3-top {margin-top: 2rem;}
 .github-icon {width: 100px;margin: 1rem auto;}
-.dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 2.2rem;}
+.dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2.5rem;margin-top: 0.2rem;}
 .git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 .language_icon .cn, .language_icon .en{height: 3rem;background-size: 70%;}
 }
