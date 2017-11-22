@@ -9,7 +9,7 @@
 <meta content="Metaverse, Metaverse ETP, ETP, ETP Wallet, MyETPWallet, The Entropy" name="author">
 <link rel="shortcut icon" href="../images/favicon.png" />
 <style type="text/css">
-body{font-family: "Microsoft YaHei", serif !important;}
+body{/*font-family: "Microsoft YaHei", serif !important;*/}
 .section{text-align:center;}
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
 #section1, #section2, #section3{padding: 6% 0 0 0;}
@@ -19,6 +19,10 @@ body{font-family: "Microsoft YaHei", serif !important;}
 #section1{}
 #section2{}
 </style>
+<!-- CSS LINKS -->
+<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <nav id="header" class="navbar navbar-fixed-top MyETPWallet_nav">
@@ -40,7 +44,7 @@ body{font-family: "Microsoft YaHei", serif !important;}
 						<li data-menuanchor="FeaturesPage"><a href="#FeaturesPage">特点</a></li>
 						<li data-menuanchor="ServicesPage"><a href="#ServicesPage">用户指南</a></li>
 						<li data-menuanchor="AboutPage"><a href="#AboutPage">关于钱包</a></li>
-						<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">进入轻钱包</a></li>
+						<li class="activeWallet" data-menuanchor="5thpage"><a href="https://app.myetpwallet.com">进入轻钱包</a></li>
 						<li class="language_icon"><a class="en" href="../index.html"></a></li>
 		      </ul>
 	      </div>
@@ -55,10 +59,10 @@ body{font-family: "Microsoft YaHei", serif !important;}
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>元界轻钱包正式上线</h1>
 					<p>创建、保存及访问您的信息，并与区块链进行交互。</p>
-					<a href="#" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">进入轻钱包</a>
+					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">进入轻钱包</a>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
-					<img src="../images/mywallet.png" class="img-responsive" alt="iMac-Wallet">
+					<img src="../images/mywallet.png" class="img-responsive" alt="Wallet Image">
 				</div>
 			</div>
 		</div>
@@ -231,12 +235,12 @@ body{font-family: "Microsoft YaHei", serif !important;}
 	<div class="section fp-auto-height container-fluid footer" id="section4">
 		<div class="container">
 			<ul class="n_nav">
-				<li><a href="#"><img src="../images/blog.svg" class="img-responsive" alt="blog"></a></li>
-				<li><a href="#"><img src="../images/git.svg" class="img-responsive" alt="github"></a></li>
-				<li><a href="#"><img src="../images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
-				<li><a href="#"><img src="../images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
-				<li><a href="#"><img src="../images/slack.svg" class="img-responsive" alt="slack"></a></li>
-				<li><a href="#"><img src="../images/bbs.svg" class="img-responsive" alt="bbs"></a></li>
+				<li><a href="http://blog.mvs.live/" target="blank"><img src="../images/blog.svg" class="img-responsive" alt="blog"></a></li>
+				<li><a href="https://github.com/mvs-org/lightwallet" target="blank"><img src="../images/git.svg" class="img-responsive" alt="github"></a></li>
+				<li><a href="https://twitter.com/mvs_org" target="blank"><img src="../images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
+				<li><a href="https://metaverse-project.herokuapp.com/" target="blank"><img src="../images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
+				<li><a href="https://metaverse-project.herokuapp.com/" target="blank"><img src="../images/slack.svg" class="img-responsive" alt="slack"></a></li>
+				<li><a href="https://medium.com/@mvs_org" target="blank"><img src="../images/medium.svg" class="img-responsive" alt="medium"></a></li>
 			</ul>
 		</div>
 		<div class="container copy_text">
@@ -244,8 +248,7 @@ body{font-family: "Microsoft YaHei", serif !important;}
 		</div>
 	</div>
 </div>
-<!-- CSS LINKS -->
-<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
+
 <!-- JS LINKS -->
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/scrolloverflow.min.js"></script>
@@ -264,8 +267,6 @@ $(document).ready(function() {
 	});
 });
 </script>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 </body>
 </html>

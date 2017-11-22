@@ -250,7 +250,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .section3-top {margin-top: 14rem;}
 .github-icon {width: 120px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 4rem;}
-.language_icon .cn, .language_icon .en{height: 4rem;background-size: 80%;}
+.language_icon .cn, .language_icon .en{height: 5rem;background-size: 80%;}
 }
 @media (min-width: 2560px){
 #header .container{width: 1900px;}
@@ -273,5 +273,5 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .section3-top {margin-top: 22rem;}
 .github-icon {width: 135px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 4.2rem;}
-.language_icon .cn, .language_icon .en{height: 4rem;background-size: 70%;}
+.language_icon .cn, .language_icon .en{height: 5rem;background-size: 70%;}
 }
