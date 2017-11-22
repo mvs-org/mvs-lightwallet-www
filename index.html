@@ -13,7 +13,7 @@
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
 #section1, #section2, #section3{padding: 6% 0 0 0;}
 #section0{background: -webkit-linear-gradient(112deg, #1c60e2, #28c6f2);background: -o-linear-gradient(112deg, #1c60e2, #28c6f2);background: -moz-linear-gradient(112deg, #1c60e2, #28c6f2);background: linear-gradient(112deg, #1c60e2, #28c6f2);background-size: 100%;background-position: bottom 0px center;}
-.section .container-fluid{background-image: url(images/group-9.svg);background-position: -240px -400px;background-repeat: repeat;background-size: 120% auto;display: block;height: 100vh;}
+#section0 .container-fluid{background-image: url(images/group-9.png);background-position: -240px -400px;background-repeat: repeat;background-size: 120% auto;display: block;height: 100vh;}
 #section0{}
 #section1{}
 #section2{}
@@ -31,7 +31,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-	        <a id="brand" class="navbar-brand etp_logo" href="#"><img src="images/logo.png" alt="MyETPWallet-logo" class="img-responsive" /></a>
+	        <a id="brand" class="navbar-brand etp_logo" href="https://www.myetpwallet.com/"><img src="images/logo.png" alt="MyETPWallet-logo" class="img-responsive" /></a>
 	      </div>
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	        <ul id="menu" class="nav navbar-nav pull-right">
@@ -39,7 +39,8 @@
 						<li data-menuanchor="FeaturesPage"><a href="#FeaturesPage">Features</a></li>
 						<li data-menuanchor="ServicesPage"><a href="#ServicesPage">Services</a></li>
 						<li data-menuanchor="AboutPage"><a href="#AboutPage">About</a></li>
-						<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">Coming Soon</a></li>
+						<li class="activeWallet" data-menuanchor="5thpage"><a href="#5thpage">Enter Wallet</a></li>
+						<li class="language_icon"><a class="cn" href="cn/index.html"></a></li>
 		      </ul>
 	      </div>
 	    </div>
@@ -52,8 +53,8 @@
 			<div class="container">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>Metaverse Light Wallet Is Coming</h1>
-					<p>It’s for you to create, save and access your information and<br>interact with Blockchain.</p>
-					<a href="#" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">coming soon</a>
+					<p>Create, save and access your information and<br>interact with the Blockchain. </p>
+					<a href="#" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">Enter Wallet</a>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
 					<img src="images/mywallet.png" class="img-responsive" alt="iMac-Wallet">
@@ -65,13 +66,13 @@
 		<div class="container section1-top">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 head-text">
 				<h1>FEATURES</h1>
-				<h3>The featurers of the Metaverse Light Wallet</h3>
+				<h3>Metaverse Light Wallet Features</h3>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_1">
 				<div class="icon-block">
 					<span><img alt="digital assets" class="img-responsive" src="images/m.png" title="img"></span>
 				</div>
-				<h3>Security</h3>
+				<h3>Secure</h3>
 				<p>Seed keys are encrypted in a file and stored on your computer.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_2">
@@ -79,7 +80,7 @@
 					<span><img alt="Digital Identity Design" class="img-responsive" src="images/n.png" title="img"></span>
 				</div>
 		      <h3>Convenient</h3>
-		      <p>Do not need to download wallet client, could generate wallet generation and transaction signing happens in the browseraccess the wallet on web.</p>
+		      <p>Generate wallets and sign transactions online without having to install the wallet client.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_3">
 				<div class="icon-block">
@@ -94,7 +95,7 @@
 		<div class="container section2-top">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 head-text">
 				<h1>SUPPORT</h1>
-				<h3>Find out the light wallet guideline and FAQs here</h3>
+				<h3>Light Wallet Guidelines & FAQs</h3>
 			</div>
 		</div>
 		<div class="container">
@@ -108,7 +109,7 @@
 	            </div>
 	            <div id="collapseOne" class="panel-collapse collapse in">
 	                <div class="panel-body">
-	                    the information from the key file never leave the users browser. all transactions are signed within the browser and only the signed transaction will be broadcasted to the network. 
+	                    Information from the private key file never leaves the users’ browser. All transactions are signed within the browser, and only signed transactions will be broadcasted to the network.  
 	                </div>
 	            </div>
 	        </div>
@@ -197,22 +198,49 @@
 	                </div>
 	            </div>
 	        </div>
+	        <div class="panel panel-default n_panel">
+	          <div class="panel-heading">
+	                <h4 class="panel-title">
+	                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">9.	When sending transaction, errors "couldn't create transaction, please input again" showing out ?</a>
+	                </h4>
+	            </div>
+	            <div id="collapseNine" class="panel-collapse collapse">
+	                <div class="panel-body">
+	                    This error shows out due to not enough ETP to pay for mining fee, please make sure you have at least 0.0001ETP for mining fee. (Eg: if you total have 10 ETP, you could only send out 9.9999ETP)
+	                </div>
+	            </div>
+	        </div>
 		  </div>		  		  
 		</div>
-		<a href="#" class="btn btn-md dwnload_btn" name="light wallet Manual" value="light wallet Manual">Light wallet Manual</a>
+		<a href="documents/lightwalletmanualEN.pdf" target="blank" class="btn btn-md dwnload_btn" name="light wallet Manual" value="light wallet Manual">Light wallet Manual</a>
 	</div>
 	<div class="section" id="section3">
 		<div class="container section3-top">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 head-text">
 				<h1>GITHUB</h1>
-				<h3>Metaverse Light wallet is open sourced</h3>
+				<h3>The Metaverse Light Wallet is completely open source.</h3>
 			</div>
 		</div>
 		<div class="container">
 			<img src="images/github.png" class="img-responsive github-icon" alt="github">
-			<p class="git_cnt">get Metaverse Light wallet source code on github and start<br>building up the new features.</p>
+			<p class="git_cnt">Get the Light Wallet’s source code on GitHub and start building!</p>
 		</div>
 		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn" name="GIT HUB Download" value="GIT HUB Download">Source Code</a>
+	</div>
+	<div class="section fp-auto-height container-fluid footer" id="section4">
+		<div class="container">
+			<ul class="n_nav">
+				<li><a href="#"><img src="images/blog.svg" class="img-responsive" alt="blog"></a></li>
+				<li><a href="#"><img src="images/git.svg" class="img-responsive" alt="github"></a></li>
+				<li><a href="#"><img src="images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
+				<li><a href="#"><img src="images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
+				<li><a href="#"><img src="images/slack.svg" class="img-responsive" alt="slack"></a></li>
+				<li><a href="#"><img src="images/bbs.svg" class="img-responsive" alt="bbs"></a></li>
+			</ul>
+		</div>
+		<div class="container copy_text">
+			<p>Copyright 2016-2017 Metaverse Foundation. All rights reserved.</p>
+		</div>
 	</div>
 </div>
 <!-- CSS LINKS -->
@@ -224,8 +252,8 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
-		anchors: ['HomePage', 'FeaturesPage', 'ServicesPage', 'AboutPage', 'lastPage'],
+		sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#35444e'],
+		anchors: ['HomePage', 'FeaturesPage', 'ServicesPage', 'AboutPage', 'footerPage'],
 		menu: '#menu',
 		verticalCentered: false,
 		css3:false,
