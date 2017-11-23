@@ -27,6 +27,12 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+//Javascript
+window.onload = function () {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+else{document.getElementById("chromeSupport").style.display="block";}
+};
 </script>
 <!-- CSS LINKS -->
 <link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
@@ -69,6 +75,7 @@ var _hmt = _hmt || [];
 					<h1>元界轻钱包正式上线</h1>
 					<p>创建、保存及访问您的信息，并与区块链进行交互。</p>
 					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">进入轻钱包</a>
+					<p id="chromeSupport">For Better Response Use Chrome Browser</p>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
 					<img src="../images/mywallet.png" class="img-responsive" alt="Wallet Image">
@@ -249,7 +256,7 @@ var _hmt = _hmt || [];
 				<li><a href="https://twitter.com/mvs_org" target="blank"><img src="../images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
 				<li><a href="https://www.facebook.com/mvsofficial/" target="blank"><img src="../images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
 				<li><a href="https://metaverse-project.herokuapp.com/" target="blank"><img src="../images/slack.svg" class="img-responsive" alt="slack"></a></li>
-				<li><a href="https://medium.com/@mvs_org" target="blank"><img src="../images/medium.svg" class="img-responsive" alt="medium"></a></li>
+				<li><a href="https://medium.com/@mvs_org" target="blank"><img src="../images/medium.png" class="img-responsive" alt="medium"></a></li>
 			</ul>
 		</div>
 		<div class="container copy_text">
