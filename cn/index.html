@@ -30,7 +30,9 @@ var _hmt = _hmt || [];
 //Javascript
 window.onload = function () {
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+var ua = navigator.userAgent;
 if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){document.getElementById("chromeSupport").style.display="none";}
 else{document.getElementById("chromeSupport").style.display="block";}
 };
 </script>
