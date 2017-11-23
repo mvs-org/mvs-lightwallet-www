@@ -3,11 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>MyETP Wallet</title>
-<meta name="description" content="">
+<title>Metaverse Light Wallet</title>
 <meta name="MyETPWallet" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<meta content="Metaverse, Metaverse ETP, ETP, ETP Wallet, MyETPWallet, The Entropy" name="author">
-<link rel="shortcut icon" href="images/favicon.png" />
+<meta name="description" content="Create, save and access your information and interact with the Blockchain.">
+<meta name="keywords" content="Metaverse light wallet,MyETPWallet,Metaverse,ETP Wallet,Metaverse ETP,ETP,The Entropy">
 <style type="text/css">
 .section{text-align:center;}
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
@@ -17,6 +16,7 @@
 #section0{}
 #section1{}
 #section2{}
+#chromeSupport{display: none;}
 </style>
 <script type="text/javascript">
 var _hmt = _hmt || [];
@@ -26,7 +26,15 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+//Javascript
+window.onload = function () {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+else{document.getElementById("chromeSupport").style.display="block";}
+};
 </script>
+
+
 <!-- CSS LINKS -->
 <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -67,7 +75,7 @@ var _hmt = _hmt || [];
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>Metaverse Light Wallet Is Live</h1>
 					<p>Create, save and access your information and<br>interact with the Blockchain. </p>
-					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">Enter Wallet</a>
+					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">Enter Wallet</a>		 <p id="chromeSupport">For Better Response Use Chrome Browser</p>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
 					<img src="images/mywallet.png" class="img-responsive" alt="Wallet Image">
@@ -248,7 +256,7 @@ var _hmt = _hmt || [];
 				<li><a href="https://twitter.com/mvs_org" target="blank"><img src="images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
 				<li><a href="https://www.facebook.com/mvsofficial/" target="blank"><img src="images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
 				<li><a href="https://metaverse-project.herokuapp.com/" target="blank"><img src="images/slack.svg" class="img-responsive" alt="slack"></a></li>
-				<li><a href="https://medium.com/@mvs_org" target="bl"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
+				<li><a href="https://medium.com/@mvs_org" target="blank"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
 			</ul>
 		</div>
 		<div class="container copy_text">

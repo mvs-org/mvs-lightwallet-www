@@ -71,8 +71,9 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .footer .n_nav{float: none;text-align: center;width: 30rem;margin: 1rem auto;}
 .n_nav li{float: left;list-style-type: none;width: 26px; height:auto;margin: 0rem 1.2rem;}
 .n_nav li a{text-decoration: none;background-color: transparent;}.n_nav li a:hover{text-decoration: none;background-color: transparent;}
-.n_nav li a img{width: 26px; height:auto;}
+.n_nav li a img{width: auto; height:auto;}
 .copy_text p{color: #ffffff;font-size: 1.4rem;text-align: center;padding-top: 1.2rem;font-weight: 400;}
+#chromeSupport{font-size: 1.2rem;color: #dd0709;line-height: 4rem;}
 /***********Responsive CSS*********/
 @media (min-width: 767px) {
 #header .container{width: 975px;}
