@@ -1,13 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>MyETP Wallet</title>
-<meta name="description" content="">
+<title>Metaverse Light Wallet</title>
 <meta name="MyETPWallet" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<meta content="Metaverse, Metaverse ETP, ETP, ETP Wallet, MyETPWallet, The Entropy" name="author">
-<link rel="shortcut icon" href="images/favicon.png" />
+<meta name="description" content="Create, save and access your information and interact with the Blockchain.">
+<meta name="keywords" content="Metaverse light wallet,MyETPWallet,Metaverse,ETP Wallet,Metaverse ETP,ETP,The Entropy">
 <style type="text/css">
 .section{text-align:center;}
 #section0, #section1, #section2{background-size: cover;background-attachment: fixed;}
@@ -17,6 +16,7 @@
 #section0{}
 #section1{}
 #section2{}
+#chromeSupport{display: none;}
 </style>
 <script type="text/javascript">
 var _hmt = _hmt || [];
@@ -26,7 +26,17 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+//Javascript
+window.onload = function () {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+var ua = navigator.userAgent;
+if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){document.getElementById("chromeSupport").style.display="none";}
+else{document.getElementById("chromeSupport").style.display="block";}
+};
 </script>
+
+
 <!-- CSS LINKS -->
 <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -67,7 +77,12 @@ var _hmt = _hmt || [];
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>Metaverse Light Wallet Is Live</h1>
 					<p>Create, save and access your information and<br>interact with the Blockchain. </p>
-					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">Enter Wallet</a>
+					<div class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+						<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse">Enter Wallet</a>
+					</div>
+					<div class="">
+						<p id="chromeSupport">For good response we suggest you to use chrome</p>
+					</div>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
 					<img src="images/mywallet.png" class="img-responsive" alt="Wallet Image">
@@ -83,21 +98,21 @@ var _hmt = _hmt || [];
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_1">
 				<div class="icon-block">
-					<span><img alt="digital assets" class="img-responsive" src="images/m.png" title="img"></span>
+					<span><img alt="digital assets" class="img-responsive" src="images/m.png"></span>
 				</div>
 				<h3>Secure</h3>
 				<p>Seed keys are encrypted in a file and stored on your computer.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_2">
 				<div class="icon-block">
-					<span><img alt="Digital Identity Design" class="img-responsive" src="images/n.png" title="img"></span>
+					<span><img alt="Digital Identity Design" class="img-responsive" src="images/n.png"></span>
 				</div>
 		      <h3>Convenient</h3>
 		      <p>Generate wallets and sign transactions online without having to install the wallet client.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_3">
 				<div class="icon-block">
-					<span><img alt="Oracle Intermediary" class="img-responsive" src="images/o.png" title="img"></span>
+					<span><img alt="Oracle Intermediary" class="img-responsive" src="images/o.png"></span>
 				</div>
 		      <h3>Intuitive design</h3>
 		      <p>Clean layout and different themes are provided, choose the one suits you best.</p>
@@ -225,7 +240,7 @@ var _hmt = _hmt || [];
 	        </div>
 		  </div>		  		  
 		</div>
-		<a href="documents/lightwalletmanualEN.pdf" target="blank" class="btn btn-md dwnload_btn" name="light wallet Manual" value="light wallet Manual">Light wallet Manual</a>
+		<a href="documents/lightwalletmanualEN.pdf" target="blank" class="btn btn-md dwnload_btn" name="light wallet Manual">Light wallet Manual</a>
 	</div>
 	<div class="section" id="section3">
 		<div class="container section3-top">
@@ -238,7 +253,7 @@ var _hmt = _hmt || [];
 			<img src="images/github.png" class="img-responsive github-icon" alt="github">
 			<p class="git_cnt">Get the Light Wallet’s source code on GitHub and start building!</p>
 		</div>
-		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn" name="GIT HUB Download" value="GIT HUB Download">Source Code</a>
+		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn" name="GIT HUB Download">Source Code</a>
 	</div>
 	<div class="section fp-auto-height container-fluid footer" id="section4">
 		<div class="container">
@@ -248,7 +263,7 @@ var _hmt = _hmt || [];
 				<li><a href="https://twitter.com/mvs_org" target="blank"><img src="images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
 				<li><a href="https://www.facebook.com/mvsofficial/" target="blank"><img src="images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
 				<li><a href="https://metaverse-project.herokuapp.com/" target="blank"><img src="images/slack.svg" class="img-responsive" alt="slack"></a></li>
-				<li><a href="https://medium.com/@mvs_org" target="bl"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
+				<li><a href="https://medium.com/@mvs_org" target="blank"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
 			</ul>
 		</div>
 		<div class="container copy_text">
