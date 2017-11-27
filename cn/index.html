@@ -1,12 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>MyETP Wallet</title>
-<meta name="description" content="">
+<title>元界轻钱包</title>
 <meta name="MyETPWallet" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<meta content="Metaverse, Metaverse ETP, ETP, ETP Wallet, MyETPWallet, The Entropy" name="author">
+<meta name="description" content="创建、保存及访问您的信息，并与区块链进行交互。">
+<meta name="keywords" content="元界轻钱包,我的ETP钱包,元界, ETP钱包,元界ETP, ETP, 熵">
 <link rel="shortcut icon" href="../images/favicon.png" />
 <style type="text/css">
 body{/*font-family: "Microsoft YaHei", serif !important;*/}
@@ -27,6 +27,14 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+//Javascript
+window.onload = function () {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+var ua = navigator.userAgent;
+if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){document.getElementById("chromeSupport").style.display="none";}
+else{document.getElementById("chromeSupport").style.display="block";}
+};
 </script>
 <!-- CSS LINKS -->
 <link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
@@ -68,7 +76,12 @@ var _hmt = _hmt || [];
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>元界轻钱包正式上线</h1>
 					<p>创建、保存及访问您的信息，并与区块链进行交互。</p>
-					<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow" name="metaverse" value="METAVERSE">进入轻钱包</a>
+					<div class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+						<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow">进入轻钱包</a>
+					</div>
+					<div class="">
+						<p id="chromeSupport">建议使用chrome浏览器来运行轻钱包</p>
+					</div>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
 					<img src="../images/mywallet.png" class="img-responsive" alt="Wallet Image">
@@ -84,21 +97,21 @@ var _hmt = _hmt || [];
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_1">
 				<div class="icon-block">
-					<span><img alt="digital assets" class="img-responsive" src="../images/m.png" title="img"></span>
+					<span><img alt="digital assets" class="img-responsive" src="../images/m.png"></span>
 				</div>
 				<h3>安全</h3>
 				<p>您的私钥会被加密到文件并存储在您的电脑上。</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_2">
 				<div class="icon-block">
-					<span><img alt="Digital Identity Design" class="img-responsive" src="../images/n.png" title="img"></span>
+					<span><img alt="Digital Identity Design" class="img-responsive" src="../images/n.png"></span>
 				</div>
 		      <h3>便捷</h3>
 		      <p>无需下载钱包客户端，便可在浏览器中访问轻钱包并进行签名交易。</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 digital_3">
 				<div class="icon-block">
-					<span><img alt="Oracle Intermediary" class="img-responsive" src="../images/o.png" title="img"></span>
+					<span><img alt="Oracle Intermediary" class="img-responsive" src="../images/o.png"></span>
 				</div>
 		      <h3>简洁</h3>
 		      <p>简洁的界面和多款皮肤可供选择，总有一款适合你。</p>
@@ -115,7 +128,7 @@ var _hmt = _hmt || [];
 		<div class="container">
 	    <div class="col-lg-push-2 col-lg-8 col-md-push-2 col-md-8 col-sm-push-0 col-sm-12 col-xs-push-0 col-xs-12 panel-group" id="accordion">
 	        <div class="panel panel-default n_panel">
-	            <div class="panel-heading panel_1" role="tab" id="headingOne">
+	            <div class="panel-heading panel_1" id="headingOne">
                 <h4 class="panel-title">
                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 1、	轻钱包的安全性是如何保证的？
                   </a>
@@ -226,7 +239,7 @@ var _hmt = _hmt || [];
 	        </div>
 		  </div>		  		  
 		</div>
-		<a href="../documents/lightwalletmanualCN.pdf" target="blank" class="btn btn-md dwnload_btn" name="light wallet Manual" value="light wallet Manual">轻钱包使用手册</a>
+		<a href="../documents/lightwalletmanualCN.pdf" target="blank" class="btn btn-md dwnload_btn">轻钱包使用手册</a>
 	</div>
 	<div class="section" id="section3">
 		<div class="container section3-top">
@@ -239,7 +252,7 @@ var _hmt = _hmt || [];
 			<img src="../images/github.png" class="img-responsive github-icon" alt="github">
 			<p class="git_cnt">在Github上获取元界轻钱包源代码，并开始创建新的功能</p>
 		</div>
-		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn" name="GIT HUB Download" value="GIT HUB Download">源码</a>
+		<a href="https://github.com/mvs-org/lightwallet" class="btn btn-md dwnload_btn">源码</a>
 	</div>
 	<div class="section fp-auto-height container-fluid footer" id="section4">
 		<div class="container">

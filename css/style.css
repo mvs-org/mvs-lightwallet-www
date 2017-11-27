@@ -71,8 +71,10 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .footer .n_nav{float: none;text-align: center;width: 30rem;margin: 1rem auto;}
 .n_nav li{float: left;list-style-type: none;width: 26px; height:auto;margin: 0rem 1.2rem;}
 .n_nav li a{text-decoration: none;background-color: transparent;}.n_nav li a:hover{text-decoration: none;background-color: transparent;}
-.n_nav li a img{width: 26px; height:auto;}
+.n_nav li a img{width: auto; height:auto;}
 .copy_text p{color: #ffffff;font-size: 1.4rem;text-align: center;padding-top: 1.2rem;font-weight: 400;}
+.clrpdg{padding-left: 0px;padding-right: 0px;}
+#chromeSupport{font-size: 1.6rem;color: #ffffff;line-height: 4rem;font-weight: 400;float: none;text-align: left;}
 /***********Responsive CSS*********/
 @media (min-width: 767px) {
 #header .container{width: 975px;}
@@ -95,11 +97,12 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .digital_1 h3, .digital_2 h3, .digital_3 h3 {font-size: 4.4rem;font-weight: 800;margin: 1rem 0rem;}
 .digital_1 p, .digital_2 p, .digital_3 p {font-size: 2.4rem;font-weight: 400;}
 #section2 .container{width: 990px;}
-.panel-group .panel-heading a, .panel-group .panel-heading a.collapsed, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .git_cnt {font-size: 2.4rem;}
+.panel-group .panel-heading a, .panel-group .panel-heading a.collapsed, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .git_cnt, #chromeSupport {font-size: 2.4rem;}
 .dwnload_btn {padding: 1.4rem 3rem;margin-bottom: 2rem;margin-top: 10rem;}
 .github-icon {width: 150px;margin: 2.4rem auto;}
 .git_cnt {padding: 2.4rem 0rem;line-height: 4.4rem;}
 .language_icon .cn, .language_icon .en{height: 3.5rem;width:3.5rem;background-size: 100%;}
+#chromeSupport{text-align: center;}
 }
 @media (min-width: 992px) {
 #header .container{width: 970px;}
@@ -116,7 +119,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div {top: 24rem;}
 .myETP_caption h1 {font-size: 4.4rem;}
 .n_btn_mtrs{font-size:1.8rem;float: left;margin-top: 3.5rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .dwnload_btn{font-size: 1.46rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .dwnload_btn, #chromeSupport{font-size: 1.46rem;}
 .head-text h1 {font-size: 11rem;}
 .head-text h3 {font-size: 2rem;top: 4.8rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 9rem; height: auto;}
@@ -127,6 +130,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2rem;margin-top: 0.2rem;}
 .git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 .language_icon .cn, .language_icon .en{height: 3rem;background-size: 70%;}
+#chromeSupport{text-align: left;}
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 #header .container{width: 970px;}
@@ -143,7 +147,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div {top: 24rem;}
 .myETP_caption h1 {font-size: 4.4rem;}
 .n_btn_mtrs{font-size:1.8rem;float: left;margin-top: 3.5rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .dwnload_btn{font-size: 1.46rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .dwnload_btn, #chromeSupport{font-size: 1.46rem;}
 .head-text h1 {font-size: 11rem;}
 .head-text h3 {font-size: 2rem;top: 4.8rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 9rem; height: auto;}
@@ -154,6 +158,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .dwnload_btn {padding: 0.76rem 4rem;margin-bottom: 2.5rem;margin-top: 0.2rem;}
 .git_cnt {padding: 1.6rem 0rem;line-height: 2.8rem;}
 .language_icon .cn, .language_icon .en{height: 3rem;background-size: 70%;}
+#chromeSupport{text-align: left;}
 }
 @media (min-width: 1300px) {
 #header .container{width: 1170px;}
@@ -165,6 +170,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .myETP_caption {top: 12.4375rem;}
 .myETP_caption h1{font-size: 5rem;}
 .myETP_caption p{font-size: 1.6rem;padding-top: 3rem;}
+#chromeSupport{font-size: 1.6rem;}
 .n_btn_mtrs{float: left;font-size: 1.6rem;margin-top: 30px;}
 .mac-div {top: 29.5rem;}
 .mac-div img{float: none;margin: auto;width: 410px;height: auto;}
@@ -184,6 +190,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .section3-top {margin-top: 2rem;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 2.2rem;}
 .language_icon .cn, .language_icon .en{height: 3rem;background-size: 80%;}
+#chromeSupport{text-align: left;}
 }
 @media (min-width: 1440px){
 #header .container{width: 1300px;}
@@ -197,7 +204,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div img{float: none;margin: auto;width: 420px;height: auto;}
 .mac-div {top: 35rem;}
 .myETP_caption h1 {font-size: 6rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 1.6rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs, #chromeSupport{font-size: 1.6rem;}
 .head-text h1 {font-size: 12rem;}
 .head-text h3 {font-size: 2.6rem;top: 5rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
@@ -207,6 +214,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .github-icon {width: 120px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 3rem;}
 .language_icon .cn, .language_icon .en{height: 4rem;background-size: 80%;}
+#chromeSupport{text-align: left;}
 }
 @media (min-width: 1680px){
 #header .container{width: 1500px;}
@@ -220,7 +228,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div img{float: none;margin: auto;width: 545px;height: auto;}
 .mac-div {top: 34rem;}
 .myETP_caption h1 {font-size: 7rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 2rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs, #chromeSupport{font-size: 2rem;}
 .head-text h1 {font-size: 12rem;}
 .head-text h3 {font-size: 2.4rem;top: 5rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
@@ -230,6 +238,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .github-icon {width: 120px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 4rem;}
 .language_icon .cn, .language_icon .en{height: 4rem;background-size: 80%;}
+#chromeSupport{text-align: left;}
 }
 @media (min-width: 1920px){
 #header .container{width: 1700px;}
@@ -243,7 +252,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div img{float: none;margin: auto;width: 620px;height: auto;}
 .mac-div {top: 40rem;}
 .myETP_caption h1 {font-size: 7.5rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 2.4rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs, #chromeSupport{font-size: 2.4rem;}
 .head-text h1 {font-size: 16rem;}
 .head-text h3 {font-size: 3rem;top: 6rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 10rem; height: auto;}
@@ -253,6 +262,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .github-icon {width: 120px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 4rem;}
 .language_icon .cn, .language_icon .en{height: 5rem;background-size: 80%;}
+#chromeSupport{text-align: left;}
 }
 @media (min-width: 2560px){
 #header .container{width: 1900px;}
@@ -267,7 +277,7 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .mac-div img{float: none;margin: auto;width: 710px;height: auto;}
 .mac-div {top: 55rem;}
 .myETP_caption h1 {font-size: 8.7rem;}
-#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs{font-size: 3rem;}
+#menu li a, .panel-group .panel-heading a.collapsed, .panel-group .panel-heading a, .panel-group .panel-body, .panel-group .panel-heading a:after, .dwnload_btn, .digital_1 p, .digital_2 p, .digital_3 p, .git_cnt, .myETP_caption p, .n_btn_mtrs, #chromeSupport{font-size: 3rem;}
 .head-text h1 {font-size: 18rem;}
 .head-text h3 {font-size: 4rem;top: 6rem;}
 .digital_1 img, .digital_2 img, .digital_3 img{width: 12rem; height: auto;}
@@ -277,4 +287,5 @@ to {-webkit-transform: scale(1.1);transform: scale(1.1);}
 .github-icon {width: 135px;margin: 1rem auto;}
 .git_cnt {padding: 1.8rem 0rem;line-height: 4.2rem;}
 .language_icon .cn, .language_icon .en{height: 5rem;background-size: 70%;}
+#chromeSupport{text-align: left;}
 }
