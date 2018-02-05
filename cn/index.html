@@ -18,22 +18,46 @@ body{/*font-family: "Microsoft YaHei", serif !important;*/}
 #section0{}
 #section1{}
 #section2{}
+#chromeSupport{display: none;}
+#getItOnPlayStore{display: none;}
+#appStore{display: none;}
+#otherMobile{display: none;}
 </style>
 <script type="text/javascript">
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?eb336c1a4a8b32bda79ce4028f6a699f";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 //Javascript
 window.onload = function () {
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-var ua = navigator.userAgent;
-if (isChrome){document.getElementById("chromeSupport").style.display="none";}
-else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){document.getElementById("chromeSupport").style.display="none";}
-else{document.getElementById("chromeSupport").style.display="block";}
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  var ua = navigator.userAgent;
+  if (isChrome){document.getElementById("chromeSupport").style.display="none";}
+  else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){
+    document.getElementById("chromeSupport").style.display="none";
+  }else{
+    document.getElementById("chromeSupport").style.display="block";
+  }
+
+  if (/Android/i.test(ua)){
+    document.getElementById("getItOnPlayStore").style.display="block";
+    document.getElementById("webLightWalletTop").style.display="none";
+    document.getElementById("webLightWallet").style.display="none";
+  }else if (/iPhone|iPad/i.test(ua)){
+    document.getElementById("appStore").style.display="block";
+    document.getElementById("webLightWalletTop").style.display="none";
+    document.getElementById("webLightWallet").style.display="none";
+  }else if (/Mobile|mobile/i.test(ua)){
+    document.getElementById("otherMobile").style.display="block";
+    document.getElementById("webLightWalletTop").style.display="none";
+    document.getElementById("webLightWallet").style.display="none";
+  }else{
+    document.getElementById("webLightWalletTop").style.display="block";
+    document.getElementById("webLightWallet").style.display="block";
+  }
 };
 </script>
 <!-- CSS LINKS -->
@@ -61,7 +85,7 @@ else{document.getElementById("chromeSupport").style.display="block";}
 						<li data-menuanchor="FeaturesPage"><a href="#FeaturesPage">特点</a></li>
 						<li data-menuanchor="ServicesPage"><a href="#ServicesPage">用户指南</a></li>
 						<li data-menuanchor="AboutPage"><a href="#AboutPage">关于钱包</a></li>
-						<li class="activeWallet" data-menuanchor="5thpage"><a href="https://app.myetpwallet.com">进入轻钱包</a></li>
+						<li id="webLightWalletTop" class="activeWallet" data-menuanchor="5thpage"><a href="https://app.myetpwallet.com">进入轻钱包</a></li>
 						<li class="language_icon"><a class="en" href="../index.html"></a></li>
 		      </ul>
 	      </div>
@@ -76,11 +100,25 @@ else{document.getElementById("chromeSupport").style.display="block";}
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 myETP_caption">
 					<h1>元界轻钱包正式上线</h1>
 					<p>创建、保存及访问您的信息，并与区块链进行交互。</p>
-					<div class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+          <div id="webLightWallet" class="col-lg-12 col-md-12 col-xs-12 clrpdg">
 						<a href="https://app.myetpwallet.com" class="btn btn-md n_btn_mtrs hvr-pulse-grow">进入轻钱包</a>
-					</div>
-					<div class="">
-						<p id="chromeSupport">建议使用chrome浏览器来运行轻钱包</p>
+          </div>
+          <div id="getItOnPlayStore" class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+            <p>在谷歌商店下载MyETPWallet的应用程序</p>
+            <a href="https://play.google.com/store/apps/details?id=com.myetpwallet.app"><img class="google-play-icon" alt="Get it on Google Play" src="../images/get-it-on-google-play.png"/></a>
+            <p>或者直接下载apk文件</p>
+            <a href="https://metaverse.nyc3.digitaloceanspaces.com/lightwallet/app/mvs-lw-testnet-0.2.1b11z.apk" class="btn btn-md dwnload_btn">
+              点击下载
+            </a>
+          </div>
+          <div id="appStore" class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+            <p>IOS的应用程序当前正在开发中，请在电脑上使用网页版的轻钱包。</p>
+          </div>
+          <div id="otherMobile" class="col-lg-12 col-md-12 col-xs-12 clrpdg">
+            <p>元界轻钱包“MyETPWallet”目前只支持在电脑和安卓手机上使用。</p>
+          </div>
+					<div id="chromeSupport" class="">
+						<p>建议使用chrome浏览器来运行轻钱包</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 pull-right mac-div">
@@ -232,12 +270,12 @@ else{document.getElementById("chromeSupport").style.display="block";}
 	                </h4>
 	            </div>
 	            <div id="collapseNine" class="panel-collapse collapse">
-	                <div class="panel-body">	                    
+	                <div class="panel-body">
 											出现此提示是由于您的钱包里没有足够的ETP来交付矿工费，请您在转账时在钱包里遗留至少0.0001etp作为矿工费（如您共有10ETP，那么您只能转出9.9999ETP）
 	                </div>
 	            </div>
 	        </div>
-		  </div>		  		  
+		  </div>
 		</div>
 		<a href="../documents/lightwalletmanualCN.pdf" target="blank" class="btn btn-md dwnload_btn">轻钱包使用手册</a>
 	</div>
